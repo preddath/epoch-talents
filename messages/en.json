@@ -3,10 +3,12 @@
   "ability": "Ability",
   "next_level": "Next Rank",
   "rank": "Rank",
+  "needed_rank": "Requires {a} points in {b} Talents",
   "click_increase": "Click to learn",
   "click_decrease": "Right click to unlearn",
   "warrior": {
     "arms": {
+      "name": "Arms",
       "improved_heroic_strike": {
         "label": "Improved Heroic Strike",
         "description": "Reduces the cost of your Heroic Strike ability by {a} rage point(s)."
@@ -107,6 +109,12 @@
         "label": "Bladestorm",
         "description": "Instantly Whirlwind up to 4 nearby targets and for thr next 6 seconds you will perform a whirlwind attack every 1 sec. <br><br> While under the effects of Bladestorm, you can move but cannot perform any other abilities but you do not feel pity or remorse or fear, you cannot be stopped unless killed, and your movement speed cannot be reduced below 60%."
       }
+    },
+    "fury": {
+      "name": "Fury"
+    },
+    "protection": {
+      "name": "Protection"
     }
   }
 }

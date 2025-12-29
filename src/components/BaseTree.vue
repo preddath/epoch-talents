@@ -11,10 +11,13 @@ export default {
 
 <template>
   <div class="h-[96%] w-1/5 bg-gray-500 rounded-lg overflow-hidden">
-    <header
-      class="h-12 bg-zinc-700 flex items-center justify-center text-amber-400 font-bold text-2xl"
-    >
-      {{ name }} ({{ total }})
+    <header class="h-12 bg-zinc-700 flex items-center text-amber-400 font-bold text-2xl">
+      <p class="grow flex justify-center">{{ name }} ({{ total }})</p>
+      <button
+        type="button"
+        class="bg-red-900 w-4 h-4 cursor-pointer mx-4"
+        @click="$emit('reset', name.toLowerCase())"
+      ></button>
     </header>
     <main
       :id="'tree_' + name.toLowerCase()"

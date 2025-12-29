@@ -2,10 +2,10 @@
 import BaseTree from '@base/BaseTree.vue'
 import ClassView from '@base/ClassView.vue'
 import TalentNode from '@base/TalentNode.vue'
+import Arrow from '@base/Arrow.vue'
 import { arms } from './arms.js'
 import { fury } from './fury.js'
 import { protection } from './protection.js'
-import Arrow from '@base/Arrow.vue'
 
 export default {
   name: 'WarriorView',
@@ -111,6 +111,13 @@ export default {
       },
     }
   },
+  methods: {
+    resetTree(tree) {
+      Object.keys(this.model[tree]).forEach((item) => {
+        this.model[tree][item] = 0
+      })
+    },
+  },
   watch: {
     model: {
       handler(n) {
@@ -137,25 +144,30 @@ export default {
 
 <template>
   <ClassView>
-    <BaseTree name="Arms" :total="arms_total" image="/warrior/background-warrior-arms.avif">
+    <BaseTree
+      name="Arms"
+      :total="arms_total"
+      image="/warrior/background-warrior-arms.avif"
+      @reset="resetTree($event)"
+    >
       <TalentNode
         name="improved_heroic_strike"
         v-bind="arms.improved_heroic_strike"
-        :total="total"
+        :total="arms_total"
         v-model="model.arms.improved_heroic_strike"
         spec="warrior.arms"
       />
       <TalentNode
         name="deflection"
         v-bind="arms.deflection"
-        :total="total"
+        :total="arms_total"
         v-model="model.arms.deflection"
         spec="warrior.arms"
       />
       <TalentNode
         name="improved_rend"
         v-bind="arms.improved_rend"
-        :total="total"
+        :total="arms_total"
         v-model="model.arms.improved_rend"
         spec="warrior.arms"
       />
@@ -164,21 +176,21 @@ export default {
       <TalentNode
         name="improved_charge"
         v-bind="arms.improved_charge"
-        :total="total"
+        :total="arms_total"
         v-model="model.arms.improved_charge"
         spec="warrior.arms"
       />
       <TalentNode
         name="iron_will"
         v-bind="arms.iron_will"
-        :total="total"
+        :total="arms_total"
         v-model="model.arms.iron_will"
         spec="warrior.arms"
       />
       <TalentNode
         name="improved_thunder_clap"
         v-bind="arms.improved_thunder_clap"
-        :total="total"
+        :total="arms_total"
         v-model="model.arms.improved_thunder_clap"
         spec="warrior.arms"
       />
@@ -187,21 +199,21 @@ export default {
       <TalentNode
         name="improved_overpower"
         v-bind="arms.improved_overpower"
-        :total="total"
+        :total="arms_total"
         v-model="model.arms.improved_overpower"
         spec="warrior.arms"
       />
       <TalentNode
         name="anger_management"
         v-bind="arms.anger_management"
-        :total="total"
+        :total="arms_total"
         v-model="model.arms.anger_management"
         spec="warrior.arms"
       />
       <TalentNode
         name="deep_wounds"
         v-bind="arms.deep_wounds"
-        :total="total"
+        :total="arms_total"
         v-model="model.arms.deep_wounds"
         spec="warrior.arms"
       />
@@ -212,21 +224,21 @@ export default {
       <TalentNode
         name="two_handed_weapon_specialization"
         v-bind="arms.two_handed_weapon_specialization"
-        :total="total"
+        :total="arms_total"
         v-model="model.arms.two_handed_weapon_specialization"
         spec="warrior.arms"
       />
       <TalentNode
         name="impale"
         v-bind="arms.impale"
-        :total="total"
+        :total="arms_total"
         v-model="model.arms.impale"
         spec="warrior.arms"
       />
       <TalentNode
         name="improved_slam"
         v-bind="arms.improved_slam"
-        :total="total"
+        :total="arms_total"
         v-model="model.arms.improved_slam"
         spec="warrior.arms"
       />
@@ -234,14 +246,14 @@ export default {
       <TalentNode
         name="poleaxe_specialization"
         v-bind="arms.poleaxe_specialization"
-        :total="total"
+        :total="arms_total"
         v-model="model.arms.poleaxe_specialization"
         spec="warrior.arms"
       />
       <TalentNode
         name="sweeping_strikes"
         v-bind="arms.sweeping_strikes"
-        :total="total"
+        :total="arms_total"
         v-model="model.arms.sweeping_strikes"
         spec="warrior.arms"
         ability
@@ -250,14 +262,14 @@ export default {
       <TalentNode
         name="mace_specialization"
         v-bind="arms.mace_specialization"
-        :total="total"
+        :total="arms_total"
         v-model="model.arms.mace_specialization"
         spec="warrior.arms"
       />
       <TalentNode
         name="sword_specialization"
         v-bind="arms.sword_specialization"
-        :total="total"
+        :total="arms_total"
         v-model="model.arms.sword_specialization"
         spec="warrior.arms"
       />
@@ -265,7 +277,7 @@ export default {
       <TalentNode
         name="improved_intercept"
         v-bind="arms.improved_intercept"
-        :total="total"
+        :total="arms_total"
         v-model="model.arms.improved_intercept"
         spec="warrior.arms"
       />
@@ -273,14 +285,14 @@ export default {
       <TalentNode
         name="improved_hamstring"
         v-bind="arms.improved_hamstring"
-        :total="total"
+        :total="arms_total"
         v-model="model.arms.improved_hamstring"
         spec="warrior.arms"
       />
       <TalentNode
         name="improved_disciplines"
         v-bind="arms.improved_disciplines"
-        :total="total"
+        :total="arms_total"
         v-model="model.arms.improved_disciplines"
         spec="warrior.arms"
       />
@@ -288,14 +300,14 @@ export default {
       <TalentNode
         name="blood_frenzy"
         v-bind="arms.blood_frenzy"
-        :total="total"
+        :total="arms_total"
         v-model="model.arms.blood_frenzy"
         spec="warrior.arms"
       />
       <TalentNode
         name="mortal_strike"
         v-bind="arms.mortal_strike"
-        :total="total"
+        :total="arms_total"
         v-model="model.arms.mortal_strike"
         spec="warrior.arms"
         ability
@@ -303,7 +315,7 @@ export default {
       <TalentNode
         name="second_wind"
         v-bind="arms.second_wind"
-        :total="total"
+        :total="arms_total"
         v-model="model.arms.second_wind"
         spec="warrior.arms"
       />
@@ -313,14 +325,14 @@ export default {
       <TalentNode
         name="endless_rage"
         v-bind="arms.endless_rage"
-        :total="total"
+        :total="arms_total"
         v-model="model.arms.endless_rage"
         spec="warrior.arms"
       />
       <TalentNode
         name="empowered_rend"
         v-bind="arms.empowered_rend"
-        :total="total"
+        :total="arms_total"
         v-model="model.arms.empowered_rend"
         spec="warrior.arms"
       />
@@ -330,26 +342,31 @@ export default {
       <TalentNode
         name="bladestorm"
         v-bind="arms.bladestorm"
-        :total="total"
+        :total="arms_total"
         v-model="model.arms.bladestorm"
         spec="warrior.arms"
       />
       <div></div>
       <div></div>
     </BaseTree>
-    <BaseTree name="Fury" :total="fury_total" image="/warrior/background-warrior-fury.avif">
+    <BaseTree
+      name="Fury"
+      :total="fury_total"
+      image="/warrior/background-warrior-fury.avif"
+      @reset="resetTree($event)"
+    >
       <div></div>
       <TalentNode
         name="cruelty"
         v-bind="fury.cruelty"
-        :total="total"
+        :total="fury_total"
         v-model="model.fury.cruelty"
         spec="warrior.fury"
       />
       <TalentNode
         name="booming_voice"
         v-bind="fury.booming_voice"
-        :total="total"
+        :total="fury_total"
         v-model="model.fury.booming_voice"
         spec="warrior.fury"
       />
@@ -359,14 +376,14 @@ export default {
       <TalentNode
         name="improved_demoralizing_shout"
         v-bind="fury.improved_demoralizing_shout"
-        :total="total"
+        :total="fury_total"
         v-model="model.fury.improved_demoralizing_shout"
         spec="warrior.fury"
       />
       <TalentNode
         name="unbridled_wrath"
         v-bind="fury.unbridled_wrath"
-        :total="total"
+        :total="fury_total"
         v-model="model.fury.unbridled_wrath"
         spec="warrior.fury"
       />
@@ -375,28 +392,28 @@ export default {
       <TalentNode
         name="improved_cleave"
         v-bind="fury.improved_cleave"
-        :total="total"
+        :total="fury_total"
         v-model="model.fury.improved_cleave"
         spec="warrior.fury"
       />
       <TalentNode
         name="piercing_howl"
         v-bind="fury.piercing_howl"
-        :total="total"
+        :total="fury_total"
         v-model="model.fury.piercing_howl"
         spec="warrior.fury"
       />
       <TalentNode
         name="blood_craze"
         v-bind="fury.blood_craze"
-        :total="total"
+        :total="fury_total"
         v-model="model.fury.blood_craze"
         spec="warrior.fury"
       />
       <TalentNode
         name="commanding_presence"
         v-bind="fury.commanding_presence"
-        :total="total"
+        :total="fury_total"
         v-model="model.fury.commanding_presence"
         spec="warrior.fury"
       />
@@ -405,14 +422,14 @@ export default {
       <TalentNode
         name="dual_wield_specialization"
         v-bind="fury.dual_wield_specialization"
-        :total="total"
+        :total="fury_total"
         v-model="model.fury.dual_wield_specialization"
         spec="warrior.fury"
       />
       <TalentNode
         name="enrage"
         v-bind="fury.enrage"
-        :total="total"
+        :total="fury_total"
         v-model="model.fury.enrage"
         spec="warrior.fury"
       />
@@ -422,14 +439,14 @@ export default {
       <TalentNode
         name="improved_execute"
         v-bind="fury.improved_execute"
-        :total="total"
+        :total="fury_total"
         v-model="model.fury.improved_execute"
         spec="warrior.fury"
       />
       <TalentNode
         name="death_wish"
         v-bind="fury.death_wish"
-        :total="total"
+        :total="fury_total"
         v-model="model.fury.death_wish"
         spec="warrior.fury"
       />
@@ -438,7 +455,7 @@ export default {
       <TalentNode
         name="weapon_mastery"
         v-bind="fury.weapon_mastery"
-        :total="total"
+        :total="fury_total"
         v-model="model.fury.weapon_mastery"
         spec="warrior.fury"
       />
@@ -446,7 +463,7 @@ export default {
       <TalentNode
         name="improved_berserker_rage"
         v-bind="fury.improved_berserker_rage"
-        :total="total"
+        :total="fury_total"
         v-model="model.fury.improved_berserker_rage"
         spec="warrior.fury"
       />
@@ -454,7 +471,7 @@ export default {
       <TalentNode
         name="flurry"
         v-bind="fury.flurry"
-        :total="total"
+        :total="fury_total"
         v-model="model.fury.flurry"
         spec="warrior.fury"
       />
@@ -463,14 +480,14 @@ export default {
       <TalentNode
         name="precision"
         v-bind="fury.precision"
-        :total="total"
+        :total="fury_total"
         v-model="model.fury.precision"
         spec="warrior.fury"
       />
       <TalentNode
         name="bloodthirst"
         v-bind="fury.bloodthirst"
-        :total="total"
+        :total="fury_total"
         v-model="model.fury.bloodthirst"
         spec="warrior.fury"
       />
@@ -478,7 +495,7 @@ export default {
       <TalentNode
         name="improved_whirlwind"
         v-bind="fury.improved_whirlwind"
-        :total="total"
+        :total="fury_total"
         v-model="model.fury.improved_whirlwind"
         spec="warrior.fury"
       />
@@ -489,7 +506,7 @@ export default {
       <TalentNode
         name="improved_berserker_stance"
         v-bind="fury.improved_berserker_stance"
-        :total="total"
+        :total="fury_total"
         v-model="model.fury.improved_berserker_stance"
         spec="warrior.fury"
       />
@@ -499,7 +516,7 @@ export default {
       <TalentNode
         name="single_minded_fury"
         v-bind="fury.single_minded_fury"
-        :total="total"
+        :total="fury_total"
         v-model="model.fury.single_minded_fury"
         spec="warrior.fury"
       />
@@ -510,25 +527,26 @@ export default {
       name="Protection"
       :total="protection_total"
       image="/warrior/background-warrior-protection.avif"
+      @reset="resetTree($event)"
     >
       <TalentNode
         name="improved_bloodrage"
         v-bind="protection.improved_bloodrage"
-        :total="total"
+        :total="protection_total"
         v-model="model.protection.improved_bloodrage"
         spec="warrior.protection"
       />
       <TalentNode
         name="tactical_mastery"
         v-bind="protection.tactical_mastery"
-        :total="total"
+        :total="protection_total"
         v-model="model.protection.tactical_mastery"
         spec="warrior.protection"
       />
       <TalentNode
         name="anticipation"
         v-bind="protection.anticipation"
-        :total="total"
+        :total="protection_total"
         v-model="model.protection.anticipation"
         spec="warrior.protection"
       />
@@ -538,7 +556,7 @@ export default {
       <TalentNode
         name="shield_specialization"
         v-bind="protection.shield_specialization"
-        :total="total"
+        :total="protection_total"
         v-model="model.protection.shield_specialization"
         spec="warrior.protection"
       />
@@ -546,7 +564,7 @@ export default {
       <TalentNode
         name="toughness"
         v-bind="protection.toughness"
-        :total="total"
+        :total="protection_total"
         v-model="model.protection.toughness"
         spec="warrior.protection"
       />
@@ -555,7 +573,7 @@ export default {
       <TalentNode
         name="last_stand"
         v-bind="protection.last_stand"
-        :total="total"
+        :total="protection_total"
         v-model="model.protection.last_stand"
         spec="warrior.protection"
         ability
@@ -563,21 +581,21 @@ export default {
       <TalentNode
         name="improved_shield_block"
         v-bind="protection.improved_shield_block"
-        :total="total"
+        :total="protection_total"
         v-model="model.protection.improved_shield_block"
         spec="warrior.protection"
       />
       <TalentNode
         name="improved_revenge"
         v-bind="protection.improved_revenge"
-        :total="total"
+        :total="protection_total"
         v-model="model.protection.improved_revenge"
         spec="warrior.protection"
       />
       <TalentNode
         name="defiance"
         v-bind="protection.defiance"
-        :total="total"
+        :total="protection_total"
         v-model="model.protection.defiance"
         spec="warrior.protection"
       />
@@ -585,21 +603,21 @@ export default {
       <TalentNode
         name="improved_sunder_armor"
         v-bind="protection.improved_sunder_armor"
-        :total="total"
+        :total="protection_total"
         v-model="model.protection.improved_sunder_armor"
         spec="warrior.protection"
       />
       <TalentNode
         name="improved_disarm"
         v-bind="protection.improved_disarm"
-        :total="total"
+        :total="protection_total"
         v-model="model.protection.improved_disarm"
         spec="warrior.protection"
       />
       <TalentNode
         name="improved_taunt"
         v-bind="protection.improved_taunt"
-        :total="total"
+        :total="protection_total"
         v-model="model.protection.improved_taunt"
         spec="warrior.protection"
       />
@@ -608,14 +626,14 @@ export default {
       <TalentNode
         name="improved_shieldwall"
         v-bind="protection.improved_shieldwall"
-        :total="total"
+        :total="protection_total"
         v-model="model.protection.improved_shieldwall"
         spec="warrior.protection"
       />
       <TalentNode
         name="concussion_blow"
         v-bind="protection.concussion_blow"
-        :total="total"
+        :total="protection_total"
         v-model="model.protection.concussion_blow"
         spec="warrior.protection"
       />
@@ -623,7 +641,7 @@ export default {
       <TalentNode
         name="improved_shield_bash"
         v-bind="protection.improved_shield_bash"
-        :total="total"
+        :total="protection_total"
         v-model="model.protection.improved_shield_bash"
         spec="warrior.protection"
       />
@@ -632,7 +650,7 @@ export default {
       <TalentNode
         name="shield_mastery"
         v-bind="protection.shield_mastery"
-        :total="total"
+        :total="protection_total"
         v-model="model.protection.shield_mastery"
         spec="warrior.protection"
       />
@@ -640,7 +658,7 @@ export default {
       <TalentNode
         name="one_handed_weapon_specialization"
         v-bind="protection.one_handed_weapon_specialization"
-        :total="total"
+        :total="protection_total"
         v-model="model.protection.one_handed_weapon_specialization"
         spec="warrior.protection"
       />
@@ -649,14 +667,14 @@ export default {
       <TalentNode
         name="improved_defensive_stance"
         v-bind="protection.improved_defensive_stance"
-        :total="total"
+        :total="protection_total"
         v-model="model.protection.improved_defensive_stance"
         spec="warrior.protection"
       />
       <TalentNode
         name="shield_slam"
         v-bind="protection.shield_slam"
-        :total="total"
+        :total="protection_total"
         v-model="model.protection.shield_slam"
         spec="warrior.protection"
         ability
@@ -664,7 +682,7 @@ export default {
       <TalentNode
         name="focused_rage"
         v-bind="protection.focused_rage"
-        :total="total"
+        :total="protection_total"
         v-model="model.protection.focused_rage"
         spec="warrior.protection"
       />
@@ -674,7 +692,7 @@ export default {
       <TalentNode
         name="vitality"
         v-bind="protection.vitality"
-        :total="total"
+        :total="protection_total"
         v-model="model.protection.vitality"
         spec="warrior.protection"
       />
@@ -685,7 +703,7 @@ export default {
       <TalentNode
         name="devestate"
         v-bind="protection.devestate"
-        :total="total"
+        :total="protection_total"
         v-model="model.protection.devestate"
         spec="warrior.protection"
         ability

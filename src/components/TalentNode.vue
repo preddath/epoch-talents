@@ -45,23 +45,16 @@ export default {
     },
   },
   emits: ['update:modelValue'],
-  data() {
-    return {
-      value: this.modelValue,
-    }
-  },
   methods: {
     handleClick() {
-      if (this.active && this.value < this.max) {
-        this.value++
-        this.$emit('update:modelValue', this.value)
+      if (this.active && this.modelValue < this.max) {
+        this.$emit('update:modelValue', this.modelValue + 1)
         document.getElementById('tooltip_' + this.spec + '_' + this.name).showPopover()
       }
     },
     handleRClick() {
-      if (this.value > 0) {
-        this.value--
-        this.$emit('update:modelValue', this.value)
+      if (this.modelValue > 0) {
+        this.$emit('update:modelValue', this.modelValue - 1)
         document.getElementById('tooltip_' + this.spec + '_' + this.name).showPopover()
       }
     },
@@ -105,9 +98,9 @@ export default {
     },
     classes() {
       let classes = ''
-      if (this.active && this.value < this.max) {
+      if (this.active && this.modelValue < this.max) {
         classes += 'border-green-400'
-      } else if (this.active && this.value === this.max) {
+      } else if (this.active && this.modelValue === this.max) {
         classes += 'border-amber-400'
       } else {
         classes += 'border-gray-400'
@@ -116,10 +109,10 @@ export default {
     },
     texts() {
       let messages = {
-        current: this.getMessage(this.value),
+        current: this.getMessage(this.modelValue),
       }
-      if (this.value < this.max) {
-        messages.next = this.getMessage(this.value + 1)
+      if (this.modelValue < this.max) {
+        messages.next = this.getMessage(this.modelValue + 1)
       }
       return messages
     },
@@ -161,13 +154,14 @@ export default {
       <p class="text-sm pr-4" v-if="ability">{{ m.ability() }}</p>
     </header>
     <p class="text-white">{{ m.rank() }} {{ modelValue }}/{{ max }}</p>
+    <p class="text-red-400">{{ m.needed_rank({ a: totalRequirement, b: m[spec + '.name']() }) }}</p>
     <p v-html="texts.current" class="text-amber-400 font-semibold" />
-    <template v-if="texts.next && value >= 1">
+    <template v-if="texts.next && modelValue >= 1">
       <hr class="my-2" />
       <p class="text-white">{{ m.next_level() }}:</p>
       <p v-html="texts.next" class="text-amber-400 font-semibold" />
     </template>
-    <p class="text-green-400 text-sm font-semibold" v-if="active && value < max">
+    <p class="text-green-400 text-sm font-semibold" v-if="active && modelValue < max">
       {{ m.click_increase() }}
     </p>
     <p class="text-green-400 text-sm font-semibold" v-else-if="active">
