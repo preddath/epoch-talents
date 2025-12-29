@@ -114,7 +114,6 @@ export default {
   },
 }
 </script>
-single-minded_fury
 
 <template>
   <ClassView>

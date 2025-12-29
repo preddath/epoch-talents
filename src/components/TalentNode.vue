@@ -97,6 +97,9 @@ export default {
     },
   },
   computed: {
+    m() {
+      return m
+    },
     active() {
       return this.totalRequirement <= this.total
     },
@@ -144,19 +147,30 @@ export default {
       :alt="name"
       :style="active ? 'filter: none;' : 'filter: grayscale(1);'"
       class="rounded-lg"
+      style="user-select: none; user-drag: none"
     />
     <span
-      class="absolute bg-zinc-700 rounded text-amber-400 px-1 text-[0.65rem] font-semibold -bottom-2 -right-2"
+      class="absolute bg-zinc-700 rounded border text-amber-400 border-amber-400 px-1 text-[0.65rem] font-semibold -bottom-2 -right-2"
       >{{ modelValue }}/{{ max }}</span
     >
   </div>
   <Popup :to="spec + '_' + name">
-    <header class="text-xl font-bold">{{ label }}</header>
-    <p>{{ texts.current }}</p>
+    <header class="text-xl font-bold flex items-center justify-between">
+      <p class="text-white">{{ label }}</p>
+      <p class="text-sm pr-4" v-if="ability">{{ m.ability() }}</p>
+    </header>
+    <p class="text-white">{{ m.rank() }} {{ modelValue }}/{{ max }}</p>
+    <p v-html="texts.current" class="text-amber-400 font-semibold" />
     <template v-if="texts.next && value >= 1">
       <hr class="my-2" />
-      <p>Next Level:</p>
-      <p>{{ texts.next }}</p>
+      <p class="text-white">{{ m.next_level() }}:</p>
+      <p v-html="texts.next" class="text-amber-400 font-semibold" />
     </template>
+    <p class="text-green-400 text-sm font-semibold" v-if="active && value < max">
+      {{ m.click_increase() }}
+    </p>
+    <p class="text-green-400 text-sm font-semibold" v-else-if="active">
+      {{ m.click_decrease() }}
+    </p>
   </Popup>
 </template>

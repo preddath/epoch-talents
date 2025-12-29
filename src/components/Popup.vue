@@ -64,7 +64,7 @@ export default {
     :id="'tooltip_' + to"
     popover="manual"
     :class="getDirection()"
-    class="popup fixed p-3 rounded-lg bg-gray-500 text-amber-400 shadow-xl z-20 text-sm m-2"
+    class="popup fixed p-3 rounded-lg bg-gray-700 opacity-90 text-amber-400 shadow-xl z-20 text-sm m-2 max-w-1/6"
     :style="'position-anchor: --anchor-' + uuid"
   >
     <slot></slot>
