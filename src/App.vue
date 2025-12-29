@@ -1,11 +1,15 @@
-<script setup></script>
+<script setup>
+import { RouterView } from 'vue-router'
+import Navigation from '@base/Navigation.vue'
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <main class="flex flex-col bg-zinc-900 h-screen">
+    <Navigation/>
+    <article class="grow">
+      <RouterView v-slot="{ Component }">
+        <component :is="Component" />
+      </RouterView>
+    </article>
+  </main>
 </template>
-
-<style scoped></style>

@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
     "paths": {
-      "@/*": ["./src/*"]
+      "@src/*": ["./src/*"],
+      "@base/*": ["./src/components/*"],
+      "@classes/*": ["./src/classes/*"]
     }
   },
   "exclude": ["node_modules", "dist"]
