@@ -11,7 +11,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint epoch-talents --fix --cache",
-    "format": "prettier --write --experimental-cli src"
+    "format": "prettier --write --experimental-cli src",
+    "machine-translate": "inlang machine translate --project project.inlang"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.18",
@@ -29,6 +30,8 @@
     "globals": "^16.5.0",
     "prettier": "3.7.4",
     "vite": "^7.3.0",
-    "vite-plugin-vue-devtools": "^8.0.5"
+    "vite-plugin-vue-devtools": "^8.0.5",
+    "@inlang/paraglide-js": "2.7.1",
+    "@inlang/cli": "^3.0.0"
   }
 }

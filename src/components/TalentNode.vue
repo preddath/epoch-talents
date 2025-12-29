@@ -1,5 +1,6 @@
 <script>
 import Popup from '@base/Popup.vue'
+import { m } from '@src/paraglide/messages.js'
 
 export default {
   name: 'TalentNode',
@@ -39,6 +40,9 @@ export default {
       type: Boolean,
       default: false,
     },
+    levels: {
+      type: Array,
+    },
   },
   emits: ['update:modelValue'],
   data() {
@@ -61,6 +65,36 @@ export default {
         document.getElementById('tooltip_' + this.spec + '_' + this.name).showPopover()
       }
     },
+    getMessage(value) {
+      let variables = {}
+      if (this.levels.length > 0) {
+        if (value > 0) {
+          variables = { a: this.levels[0][value - 1] }
+        } else {
+          variables = { a: this.levels[0][0] }
+        }
+        if (this.levels[1]) {
+          if (value > 0) {
+            variables.b = this.levels[1][value - 1]
+          } else {
+            variables.b = this.levels[1][0]
+          }
+        }
+        if (this.levels[2]) {
+          if (value > 0) {
+            variables.c = this.levels[2][value - 1]
+          } else {
+            variables.c = this.levels[2][0]
+          }
+        }
+      }
+      const key = this.spec + '.' + this.name + '.description'
+      if (m[key]) {
+        return m[key](variables)
+      } else {
+        return key
+      }
+    },
   },
   computed: {
     active() {
@@ -77,7 +111,22 @@ export default {
       }
       return classes
     },
-    currentText() {},
+    texts() {
+      let messages = {
+        current: this.getMessage(this.value),
+      }
+      if (this.value < this.max) {
+        messages.next = this.getMessage(this.value + 1)
+      }
+      return messages
+    },
+    label() {
+      if (m[this.spec + '.' + this.name + '.label']) {
+        return m[this.spec + '.' + this.name + '.label']()
+      } else {
+        return this.name
+      }
+    },
   },
 }
 </script>
@@ -102,10 +151,12 @@ export default {
     >
   </div>
   <Popup :to="spec + '_' + name">
-    <header class="text-xl font-bold">{{ name }}</header>
-    <article>Increases your total Stamina by 1% and your total Strength by 1%.</article>
-    <hr class="my-2" />
-    <p>Next Level:</p>
-    <article>Increases your total Stamina by 2% and your total Strength by 2%.</article>
+    <header class="text-xl font-bold">{{ label }}</header>
+    <p>{{ texts.current }}</p>
+    <template v-if="texts.next && value >= 1">
+      <hr class="my-2" />
+      <p>Next Level:</p>
+      <p>{{ texts.next }}</p>
+    </template>
   </Popup>
 </template>
