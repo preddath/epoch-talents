@@ -136,6 +136,7 @@ export default {
 
 <template>
   <div
+    :id="name"
     class="h-12 w-12 rounded-lg border-2 relative cursor-pointer"
     :class="classes"
     @click="handleClick"
@@ -150,7 +151,7 @@ export default {
       style="user-select: none; user-drag: none"
     />
     <span
-      class="absolute bg-zinc-700 rounded border text-amber-400 border-amber-400 px-1 text-[0.65rem] font-semibold -bottom-2 -right-2"
+      class="absolute bg-zinc-700 rounded border text-amber-400 border-amber-400 px-1 z-20 text-[0.65rem] font-semibold -bottom-2 -right-2"
       >{{ modelValue }}/{{ max }}</span
     >
   </div>
