@@ -8,16 +8,18 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [paraglideVitePlugin({ project: './project.inlang', outdir: './src/paraglide' }),
+  publicPath: '/epoch-talents/',
+  plugins: [
+    paraglideVitePlugin({ project: './project.inlang', outdir: './src/paraglide' }),
     vue(),
     vueDevTools(),
-      tailwindcss()
+    tailwindcss(),
   ],
   resolve: {
     alias: {
       '@src': fileURLToPath(new URL('./src', import.meta.url)),
       '@base': fileURLToPath(new URL('./src/components', import.meta.url)),
-      '@classes': fileURLToPath(new URL('./src/classes', import.meta.url))
+      '@classes': fileURLToPath(new URL('./src/classes', import.meta.url)),
     },
   },
 })
