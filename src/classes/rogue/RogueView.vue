@@ -100,7 +100,7 @@ export default {
   },
   mounted() {
     const url = window.location.href.split('/')
-    if (url.length === 6) {
+    if (url.length === 6 && url[5] !== '') {
       let trees = url[5].split('a')
       Object.keys(this.model.assassination).forEach((item, index) => {
         this.model.assassination[item] = parseInt(trees[0][index])
@@ -173,7 +173,7 @@ export default {
       name="rogue"
       spec="assassination"
       :total="assassination_total"
-      image="/rogue/background-rogue-assassination.avif"
+      image="/epoch-talents/rogue/background-rogue-assassination.avif"
       @reset="resetTree($event)"
     >
       <TalentNode
@@ -361,7 +361,7 @@ export default {
       name="rogue"
       spec="combat"
       :total="combat_total"
-      image="/rogue/background-rogue-combat.avif"
+      image="/epoch-talents/rogue/background-rogue-combat.avif"
       @reset="resetTree($event)"
     >
       <TalentNode
@@ -567,7 +567,7 @@ export default {
       name="rogue"
       spec="subtlety"
       :total="subtlety_total"
-      image="/rogue/background-rogue-subtlety.avif"
+      image="/epoch-talents/rogue/background-rogue-subtlety.avif"
       @reset="resetTree($event)"
     >
       <div></div>

@@ -102,8 +102,8 @@ export default {
   },
   mounted() {
     const url = window.location.href.split('/')
-    if (url.length === 5) {
-      let trees = url[4].split('a')
+    if (url.length === 6 && url[5] !== '') {
+      let trees = url[5].split('a')
       Object.keys(this.model.arms).forEach((item, index) => {
         this.model.arms[item] = parseInt(trees[0][index])
       })
@@ -175,7 +175,7 @@ export default {
       name="warrior"
       spec="arms"
       :total="arms_total"
-      image="/warrior/background-warrior-arms.avif"
+      image="/epoch-talents/warrior/background-warrior-arms.avif"
       @reset="resetTree($event)"
     >
       <TalentNode
@@ -381,7 +381,7 @@ export default {
       name="warrior"
       spec="fury"
       :total="fury_total"
-      image="/warrior/background-warrior-fury.avif"
+      image="/epoch-talents/warrior/background-warrior-fury.avif"
       @reset="resetTree($event)"
     >
       <div></div>
@@ -556,7 +556,7 @@ export default {
       name="warrior"
       spec="protection"
       :total="protection_total"
-      image="/warrior/background-warrior-protection.avif"
+      image="/epoch-talents/warrior/background-warrior-protection.avif"
       @reset="resetTree($event)"
     >
       <TalentNode

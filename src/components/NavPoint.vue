@@ -21,6 +21,6 @@ export default {
     class="h-10 w-10 rounded-full overflow-hidden"
     :class="currentClass === name ? 'border-4 border-amber-400' : 'border-2 border-green-400'"
   >
-    <img :src="'/' + name + '/classicon_' + name + '.webp'" :alt="name" />
+    <img :src="'/epoch-talents/' + name + '/classicon_' + name + '.webp'" :alt="name" />
   </RouterLink>
 </template>
