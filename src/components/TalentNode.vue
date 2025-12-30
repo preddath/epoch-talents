@@ -137,7 +137,7 @@ export default {
     :name="spec + '_' + name"
   >
     <img
-      :src="path"
+      :src="'../' + path"
       :alt="name"
       :style="active ? 'filter: none;' : 'filter: grayscale(1);'"
       class="rounded-lg"
@@ -154,7 +154,9 @@ export default {
       <p class="text-sm pr-4" v-if="ability">{{ m.ability() }}</p>
     </header>
     <p class="text-white">{{ m.rank() }} {{ modelValue }}/{{ max }}</p>
-    <p class="text-red-400">{{ m.needed_rank({ a: totalRequirement, b: m[spec + '.name']() }) }}</p>
+    <p v-if="!active" class="text-red-400">
+      {{ m.needed_rank({ a: totalRequirement, b: m[spec + '.name']() }) }}
+    </p>
     <p v-html="texts.current" class="text-amber-400 font-semibold" />
     <template v-if="texts.next && modelValue >= 1">
       <hr class="my-2" />

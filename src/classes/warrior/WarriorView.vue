@@ -9,17 +9,6 @@ import { protection } from './protection.js'
 
 export default {
   name: 'WarriorView',
-  computed: {
-    arms() {
-      return arms
-    },
-    fury() {
-      return fury
-    },
-    protection() {
-      return protection
-    },
-  },
   components: {
     Arrow,
     BaseTree,
@@ -111,11 +100,49 @@ export default {
       },
     }
   },
+  mounted() {
+    const url = window.location.href.split('/')
+    if (url.length === 5) {
+      let trees = url[4].split('a')
+      Object.keys(this.model.arms).forEach((item, index) => {
+        this.model.arms[item] = parseInt(trees[0][index])
+      })
+      Object.keys(this.model.fury).forEach((item, index) => {
+        this.model.fury[item] = parseInt(trees[0][index])
+      })
+      Object.keys(this.model.protection).forEach((item, index) => {
+        this.model.protection[item] = parseInt(trees[0][index])
+      })
+    }
+  },
+  computed: {
+    arms() {
+      return arms
+    },
+    fury() {
+      return fury
+    },
+    protection() {
+      return protection
+    },
+    shareLink() {
+      let str =
+        Object.values(this.model.arms).join('') +
+        'a' +
+        Object.values(this.model.fury).join('') +
+        'a' +
+        Object.values(this.model.protection).join('')
+      return window.location.href + '/' + str
+    },
+  },
   methods: {
     resetTree(tree) {
       Object.keys(this.model[tree]).forEach((item) => {
         this.model[tree][item] = 0
       })
+    },
+    share() {
+      navigator.clipboard.writeText(this.shareLink)
     },
   },
   watch: {
@@ -143,7 +170,7 @@ export default {
 </script>
 
 <template>
-  <ClassView>
+  <ClassView @share="share()">
     <BaseTree
       name="Arms"
       :total="arms_total"
