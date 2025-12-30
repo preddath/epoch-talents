@@ -100,8 +100,8 @@ export default {
   },
   mounted() {
     const url = window.location.href.split('/')
-    if (url.length === 5) {
-      let trees = url[4].split('a')
+    if (url.length === 6) {
+      let trees = url[5].split('a')
       Object.keys(this.model.assassination).forEach((item, index) => {
         this.model.assassination[item] = parseInt(trees[0][index])
       })

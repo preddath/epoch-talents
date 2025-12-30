@@ -5,11 +5,12 @@ import RogueView from '@classes/rogue/RogueView.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    { path: '/', redirect: '/rogue' },
-    { path: '/rogue', component: RogueView },
-    { path: '/rogue/:string', component: RogueView },
-    { path: '/warrior', component: WarriorView },
-    { path: '/warrior/:string', component: WarriorView },
+    { path: '/', redirect: '/epoch-talents/rogue' },
+    { path: '/epoch-talents', redirect: '/epoch-talents/rogue' },
+    { path: '/epoch-talents/rogue', component: RogueView },
+    { path: '/epoch-talents/rogue/:string', component: RogueView },
+    { path: '/epoch-talents/warrior', component: WarriorView },
+    { path: '/epoch-talents/warrior/:string', component: WarriorView },
   ],
 })
 
