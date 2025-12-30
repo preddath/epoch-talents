@@ -378,10 +378,198 @@
       }
     },
     "combat": {
-      "name": "Combat"
+      "name": "Combat",
+      "improved_gouge": {
+        "label": "Improved Gouge",
+        "description": "Increases the effect duration of your Gouge ability by {a} sec."
+      },
+      "improved_sinister_strike": {
+        "label": "Improved Sinister Strike",
+        "description": "Reduces the Energy cost of your Sinister Strike ability by {a}."
+      },
+      "lightning_reflexes": {
+        "label": "Lightning Reflexes",
+        "description": "Increases your Agility by {a}%."
+      },
+      "improvend_slice_and_dice": {
+        "label": "Improved Slice and Dice",
+        "description": "Increases the duration of your Slice and Dice ability by {a}%."
+      },
+      "deflection": {
+        "label": "Deflection",
+        "description": "Increases your Parry chance by {a}%."
+      },
+      "precision": {
+        "label": "Precision",
+        "description": "Increases your chance to hit with weapons by {a}%."
+      },
+      "endurance": {
+        "label": "Endurance",
+        "description": "Reduces the cooldown of your Sprint and Evasion abilities by {a} sec."
+      },
+      "riposte": {
+        "label": "Riposte",
+        "description": "A strike that becomes active after parrying an oppnents attack. This attack deals 150% weapon damage and disarms the target for 6 seconds."
+      },
+      "improved_sprint": {
+        "label": "Improved Sprint",
+        "description": "Gives a {a}% chance to remove all movement impairing effects when you activate your Sprint ability."
+      },
+      "improved_kick": {
+        "label": "Imroved Kick",
+        "description": "Gives your Kick ability a {a}% chance to silence the target for 2 seconds."
+      },
+      "dagger_specialization": {
+        "label": "Dagger Specialization",
+        "description": "Increases your chance to get a critical strike with Daggers by {a}%."
+      },
+      "dual_wield_specialization": {
+        "label": "Dual Wield Specialization",
+        "description": "Increases the damage done by your offhand weapon by {a}%."
+      },
+      "axe_specialization": {
+        "label": "Axe Specialization",
+        "description": "Gives you a {a}% chance to cause your target to bleed for 100% weapon damage over 15 seconds after hitting them with an Axe."
+      },
+      "mace_specialization": {
+        "label": "Mace Specialization",
+        "description": "Increases the damage dealt by your critical Strikes with Maces by {a}%, and gives you a {b}% chance to stun your target for 3 seconds with a mace."
+      },
+      "blade_flurry": {
+        "label": "Blade Flurry",
+        "description": "Increases your attack speed by 20%. In addition, attacks strike an additional nearby opponent. Lasts 15 seconds."
+      },
+      "sword_specialization": {
+        "label": "Sword Specialization",
+        "description": "Gives you a {a}% chance to get an extra attack on the same target after hitting your target with your sword."
+      },
+      "fist_weapon_specialization": {
+        "label": "Fist Weapon Spezialization",
+        "description": "Increases your chance to get a critical strike with Fist Weapons by {a}%."
+      },
+      "blade_twisting": {
+        "label": "Blade Twisting",
+        "description": "Gives your Sinister Strike, Backstab, Gouge and Shiv abilities a {a}% chance to Daze the target for 4 seconds."
+      },
+      "weapon_expertise": {
+        "label": "Weapon Expertise",
+        "description": "Reduces your chance to be dodged or parried by {a}%."
+      },
+      "aggression": {
+        "label": "Aggression",
+        "description": "Increases the damage of your Sinister Strike, Backstab and Eviscerate abilities by {a}%."
+      },
+      "vitality": {
+        "label": "Vitality",
+        "description": "Increases your total Stamina by {a}% and your total Agility by {b}%."
+      },
+      "adrenaline_rush": {
+        "label": "Adrenaline Rush",
+        "description": "Increases your Energy regeneration rate by 100% for 15 seconds."
+      },
+      "nerves_of_steel": {
+        "label": "Nerves of Steel",
+        "description": "Increases your chance to resist Stun and Fear effects by an additional {a}%."
+      },
+      "combat_potency": {
+        "label": "Combat Potency",
+        "description": "Gives your successful off-hand melee attacks a 20% chance to generate {a} Energy."
+      },
+      "surprise_attacks": {
+        "label": "Surprise Attacks",
+        "description": "Your finishing moves can no longer be dodged and the damage dealt by your Sinister Strike, Backstab, Shiv and Gouge abilities is increased by 10%."
+      }
     },
     "subtlety": {
-      "name": "Subtlety"
+      "name": "Subtlety",
+      "master_of_deception": {
+        "label": "Master of Deception",
+        "description": "Reduces the chance enemies have to deflect you while in Stealth. More effective with more ranks."
+      },
+      "opportunity": {
+        "label": "Opportunity",
+        "description": "Increases the damage dealt when striking from behind with your Backstab, Mutilate, Garotte and Ambush abilities by {a}%."
+      },
+      "sleight_of_hand": {
+        "label": "Sleight of Hand",
+        "description": "Reduces the chance you are critically hit by melee and ranged attacks by {a}% and increases the threat reduction of your Feint ability by {b}%."
+      },
+      "dirty_tricks": {
+        "label": "Dirty Tricks",
+        "description": "Increases the range of your Blind and Sap abilities by {a} yards and reduces the energy cost of your Blind and Sap abilities by {b}%."
+      },
+      "camouflage": {
+        "label": "Camouflage",
+        "description": "Increases your speed while stealthed by {a}% and reduces the cooldown of your Stealth ability by {b} sec."
+      },
+      "initiative": {
+        "label": "Inititive",
+        "description": "Gives you a {a}% chance to add an additional combo point to your target when using your Ambush, Garrote or Cheap Shot ability."
+      },
+      "ghostly_strike": {
+        "label": "Ghostly Strike",
+        "description": "A strike that deals 125% weapon damage and increases your dodge by 15% for 7 seconds. <br> Awards 1 Combo Point."
+      },
+      "improved_ambush": {
+        "label": "Improved Ambush",
+        "description": "Increases the critical strike chance of your Ambush ability by {a}%."
+      },
+      "setup": {
+        "label": "Setup",
+        "description": "Gives a {a}% chance to add a combo point to your target after dodging their attack or fully resisting one of their spells."
+      },
+      "elusiveness": {
+        "label": "Elusiveness",
+        "description": "Reduces the cooldown of your Vanish and Blind abilities by {a} seconds."
+      },
+      "serrated_blades": {
+        "label": "Serrated Blades",
+        "description": "Causes your attacks to ignore {a} ofd your targets Armor and increases the damage dealt by your Rupture ability by {b}%. The amount of Armor reduced increases with your level."
+      },
+      "heightened_senses": {
+        "label": "Heightened Senses",
+        "description": "Increases your Stealth detection and reduces the chance you are hit by spells and ranged attacks by {a}%."
+      },
+      "preparation": {
+        "label": "Preparation",
+        "description": "When activated, this ability immediately finishes the cooldown on your Evasion, Sprint, Vanish, Cold Blood, Shadowstep and Premeditation abilities."
+      },
+      "dirty_deeds": {
+        "label": "Dirty Deeds",
+        "description": "Reduces the Energy cost of your Cheap Shot and Garotte abilities by {a}. Additionally, your special abilities cause {a}% more damage against targets below 35% helath."
+      },
+      "hemorrhage": {
+        "label": "Hemorrhage",
+        "description": "An instant strike that deals 110% weapon damage and causes the target to hemorrhage, increasing any Physical damage dealt to the target by up to 13. Lasts 10 charges or 15 seconds. <br> Awards 1 Combo Point."
+      },
+      "master_of_subtlety": {
+        "label": "Master of Subtlety",
+        "description": "Attacks made while stealthed and for 6 seconds after breaking stealth cause an additional {a}% damage."
+      },
+      "deadliness": {
+        "label": "Deadliness",
+        "description": "Increases your attack power by {a}%."
+      },
+      "enveloping_shadows": {
+        "label": "Enveloping Shadows",
+        "description": "Increases your chance to avoid area of effect attacks by an additional {a}%."
+      },
+      "premeditation": {
+        "label": "Premeditation",
+        "description": "When used, adds 2 Combo Points to your target. You must add to or use these Combo Points within 10 seconds or the combo points are lost."
+      },
+      "cheat_death": {
+        "label": "Cheat Death",
+        "description": "You hav a {a}% chance that an attack which would otherwise kill you will instead reduce you to 10% of your maximum health, unless the attack is too devastating. In addition, all damage taken will be reduced by an amount equal to twice your dodge chance up to 90% for 3 seconds. This effect cannot occur more than once per minute."
+      },
+      "sinister_calling": {
+        "label": "Sinister Calling",
+        "description": "Increases your total Agility by {a}% and increases the percentage damage bonus of Backstab and Hemorrhage by an additional {b}%."
+      },
+      "shadowstep": {
+        "label": "Shadowstep",
+        "description": "Attempts to step through the shadows and reappear behind your enemy and increases movement speed by 70% for 3 seconds. The damage of your next ability is increased by 20% and the threat caused is reduced by 50%. Lasts 10 seconds."
+      }
     }
   }
 }

@@ -30,7 +30,7 @@ export default {
     </header>
     <main
       :id="'tree_' + spec"
-      class="grid grid-cols-4 grid-rows-10 gap-y-8 place-items-center relative p-2"
+      class="grid grid-cols-4 grid-rows-9 gap-y-8 place-items-center relative px-2 py-4"
       :style="'background-image: url(' + image + ')'"
       style="background-size: cover; background-position: center center; background-repeat: repeat"
     >
