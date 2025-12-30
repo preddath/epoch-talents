@@ -284,5 +284,104 @@
         "description": "Sunder the target's armor causing the Sunder Armor effect.<br> In addition, causes {a}% of weapon damage plus 15 for each application of Sunder Armor on the target. <br> The Sunder Armor effect can stack up to 5 times."
       }
     }
+  },
+  "rogue": {
+    "assassination": {
+      "name": "Assassination",
+      "improved_eviscerate": {
+        "label": "Improved Eviscerate",
+        "description": "Increases the damage done by your Eviscerate ability by {a}%."
+      },
+      "remorseless_attacks": {
+        "label": "Remorseless Attacks",
+        "description": "After killing an opponent that yields experience or honor, gives you a {a}% increased critical strike chance on your next Sinister Strike, Backstab, Ambush, or Ghostly Strike. Lasts 20 sec."
+      },
+      "malice": {
+        "label": "Malice",
+        "description": "Increases your critical strike chance by {a}%."
+      },
+      "ruthlessness": {
+        "label": "Ruthlessness",
+        "description": "Gives your melee finishing moves a {a}% chance to add a combo point to your target."
+      },
+      "murder": {
+        "label": "Murder",
+        "description": "Increases all damage caused against Humanoid, Giant, Beast and Dragonkin targets by {a}%."
+      },
+      "puncturing_wounds": {
+        "label": "Puncturing Wounds",
+        "description": "Increases the critical strike chance of your Backstab ability by {a}% and the critical stroke chance of your Mutilate ability by {b}%."
+      },
+      "relentless_strikes": {
+        "label": "Relentless Strikes",
+        "description": "Your finishing moves have a 20% chance per combo point to restore 25 energy."
+      },
+      "improved_expose_armor": {
+        "label": "Poisoned Knife",
+        "description": "Throw and Deadly Throw now have a {a}% chance to consume 10 minutes of your off-hand weapon's poison to apply it to the target."
+      },
+      "lethality": {
+        "label": "Lethality",
+        "description": "Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Ghostly Strike, Mutilate, Shiv and Hemorrhage by {a}%."
+      },
+      "vile_poisons": {
+        "label": "Vile Poisons",
+        "description": "Increases the damage dealt by your poisons and Envenom ability by {a}% and gives your poisons an additional {b}% chance to resist dispel effects."
+      },
+      "improved_poisons": {
+        "label": "Improved Poisons",
+        "description": "Increases the chance to apply poisons to your target by {a}% and increases the duration of your poison on your weapon by {b}%."
+      },
+      "fleet_footed": {
+        "label": "Fleet Footed",
+        "description": "Increases your chance to resist movement impairing effects by {a}% and increases your movement speed by {b}%. <br><br> <small>This does not stack with other movement speed increasing effects.</small>"
+      },
+      "cold_blooded": {
+        "label": "Cold Blood",
+        "description": "When activated, increases the critical strike chance of your next offensive ability by 100%."
+      },
+      "improved_kidney_shot": {
+        "label": "Improved Kidney Shot",
+        "description": "While affected by your Kidney Shot ability, the target recieves an additional {a}% damage from all sources."
+      },
+      "quick_recovery": {
+        "label": "Quick Recovery",
+        "description": "All healing effects on you are increased by {a}%. In addition, your finishing moves cost {b}% less Energy when they fail to hit"
+      },
+      "poisoned_knife": {
+        "label": "Improved Expose Armor",
+        "description": "Increases the armor reduced by your Expose Armor ability by {a}%."
+      },
+      "seal_fate": {
+        "label": "Seal Fate",
+        "description": "Your critical strikes from abilities that add combo points have a {a}% chance to add an additional combo point."
+      },
+      "master_poisoner": {
+        "label": "Master Poisoner",
+        "description": "Reduces the chance your poisons will be resisted by {a}% and increases your chance to resist Poison effects by an additional {b}%."
+      },
+      "vigor": {
+        "label": "Vigor",
+        "description": "Increases your maximum energy by 20 and your Energy regeneration by 10%."
+      },
+      "deadened_nerves": {
+        "label": "Deadened Nerves",
+        "description": "Decreases physical damage taken by {a}%."
+      },
+      "find_weakness": {
+        "label": "Find Weakness",
+        "description": "Your finishing moves increase the damage of all your offensive abilities by {a}% for 10 seconds."
+      },
+      "mutilate": {
+        "label": "Mutilate",
+        "description": "Instantly attacks with both weapons for an additional 44 with each weapon. Damage ist increased by 50% against Poisoned targets. <br> Awards 2 combo points."
+      }
+    },
+    "combat": {
+      "name": "Combat"
+    },
+    "subtlety": {
+      "name": "Subtlety"
+    }
   }
 }

@@ -172,7 +172,8 @@ export default {
 <template>
   <ClassView @share="share()">
     <BaseTree
-      name="Arms"
+      name="warrior"
+      spec="arms"
       :total="arms_total"
       image="/warrior/background-warrior-arms.avif"
       @reset="resetTree($event)"
@@ -377,7 +378,8 @@ export default {
       <div></div>
     </BaseTree>
     <BaseTree
-      name="Fury"
+      name="warrior"
+      spec="fury"
       :total="fury_total"
       image="/warrior/background-warrior-fury.avif"
       @reset="resetTree($event)"
@@ -551,7 +553,8 @@ export default {
       <div></div>
     </BaseTree>
     <BaseTree
-      name="Protection"
+      name="warrior"
+      spec="protection"
       :total="protection_total"
       image="/warrior/background-warrior-protection.avif"
       @reset="resetTree($event)"
