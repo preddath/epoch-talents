@@ -12,3 +12,13 @@ jobs:
           username: 'preddath'
           reponame: 'epoch-talents'
           token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
+        env:
+          CI_COMMIT_MESSAGE: Fix imports
+          CI_COMMIT_AUTHOR: CI
+      - run: |
+          git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
+          git config --global user.email "ci@example.com"
+          sed -i -e 's+/epoch_logo+epoch_logo+g' index.html
+          sed -i -e 's+assets+epoch-talents/assets+g' index.html
+          git commit --verbose -m "${{ env.CI_COMMIT_MESSAGE }}"
+          git push origin gh-pages
