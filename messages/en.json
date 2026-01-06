@@ -317,8 +317,8 @@
         "description": "Your finishing moves have a 20% chance per combo point to restore 25 energy."
       },
       "improved_expose_armor": {
-        "label": "Poisoned Knife",
-        "description": "Throw and Deadly Throw now have a {a}% chance to consume 10 minutes of your off-hand weapon's poison to apply it to the target."
+        "label": "Improved Expose Armor",
+        "description": "Increases the armor reduced by your Expose Armor ability by {a}%."
       },
       "lethality": {
         "label": "Lethality",
@@ -349,8 +349,8 @@
         "description": "All healing effects on you are increased by {a}%. In addition, your finishing moves cost {b}% less Energy when they fail to hit"
       },
       "poisoned_knife": {
-        "label": "Improved Expose Armor",
-        "description": "Increases the armor reduced by your Expose Armor ability by {a}%."
+        "label": "Poisoned Knife",
+        "description": "Throw and Deadly Throw now have a {a}% chance to consume 10 minutes of your off-hand weapon's poison to apply it to the target."
       },
       "seal_fate": {
         "label": "Seal Fate",
@@ -358,7 +358,7 @@
       },
       "master_poisoner": {
         "label": "Master Poisoner",
-        "description": "Reduces the chance your poisons will be resisted by {a}% and increases your chance to resist Poison effects by an additional {b}%."
+        "description": "Reduces the chance your poisons will be resisted by {a}% and increases your chance to resist Poison effects by an additional {b}% and gives Envenom a {c}% chance to not consume Deadly Poison."
       },
       "vigor": {
         "label": "Vigor",

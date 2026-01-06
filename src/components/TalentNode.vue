@@ -163,7 +163,7 @@ export default {
     <template v-if="texts.next && modelValue >= 1">
       <hr class="my-2" />
       <p class="text-white">{{ m.next_level() }}:</p>
-      <p v-html="texts.next" class="text-amber-400 font-semibold" />
+      <p v-html="texts.next" class="text-amber-400" />
     </template>
     <p class="text-green-400 text-sm font-semibold" v-if="active && modelValue < max">
       {{ m.click_increase() }}

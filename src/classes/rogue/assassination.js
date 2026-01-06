@@ -129,6 +129,7 @@ export const assassination = {
     levels: [
       [5, 10],
       [15, 30],
+      [50, 100],
     ],
   },
 
