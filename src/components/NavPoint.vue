@@ -12,7 +12,7 @@ export default {
   },
   computed: {
     currentClass() {
-      return this.$route.path.split('/')[2]
+      return this.$route.path.split('/')[2] ?? this.$route.path.split('/')[1]
     },
   },
 }

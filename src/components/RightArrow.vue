@@ -1,6 +1,6 @@
 <script>
 export default {
-  name: 'HorizontalArrow',
+  name: 'RightArrow',
   props: {
     from: {
       type: String,
@@ -52,7 +52,7 @@ export default {
       const endElement = this.endElement.getBoundingClientRect()
 
       this.elementHeight =
-        'width:' + (endElement.left - startElement.right - (this.headless ? -8 : 12)) + 'px;'
+        'width:' + (endElement.left - startElement.right - (this.headless ? -8 : 10)) + 'px;'
     },
   },
 }
@@ -64,10 +64,13 @@ export default {
     class="absolute flex items-center z-10"
     :style="startPosition"
   >
-    <div style="background-image: url('/arrow_body_h.webp'); height: 17px" :style="elementHeight" />
+    <div
+      style="background-image: url('/arrow_body_h.webp'); height: 17px; margin-right: -2px"
+      :style="elementHeight"
+    />
     <div
       v-if="!headless"
-      style="background-image: url('/arrow_head_h.webp'); height: 25px"
+      style="background-image: url('/arrow_head_r.webp'); height: 25px"
       class="w-4 -ml-1"
     />
   </div>

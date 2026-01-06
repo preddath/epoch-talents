@@ -6,12 +6,12 @@ import { combat } from '@classes/rogue/combat.js'
 import { subtlety } from '@classes/rogue/subtlety.js'
 import TalentNode from '@base/TalentNode.vue'
 import Arrow from '@base/Arrow.vue'
-import HorizontalArrow from '@base/HorizontalArrow.vue'
+import RightArrow from '@base/RightArrow.vue'
 import { pathPart } from '@src/enviroment.js'
 
 export default {
   name: 'RogueView',
-  components: { HorizontalArrow, Arrow, TalentNode, BaseTree, ClassView },
+  components: { HorizontalArrow: RightArrow, Arrow, TalentNode, BaseTree, ClassView },
   data() {
     return {
       total: 0,
