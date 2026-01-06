@@ -660,31 +660,31 @@
       "name": "Enhancement",
       "ancestral_knowledge": {
         "label": "Ancestral Knowledge",
-        "description": "Increases your total Intellect by 2%."
+        "description": "Increases your total Intellect by {a}%."
       },
       "shield_specialization": {
         "label": "Shield Specialization",
-        "description": "Increases your chance to block attacks with a shield by 1% and increases the amount blocked by 5%."
+        "description": "Increases your chance to block attacks with a shield by {a}% and increases the amount blocked by {b}%."
       },
       "guardian_totems": {
         "label": "Guardian Totems",
-        "description": "Increases the amount of damage reduced by your Stoneskin Totem and Windwall Totem by 10% and reduces the cooldown of your Grounding Totem by 1 sec."
+        "description": "Increases the amount of damage reduced by your Stoneskin Totem and Windwall Totem by {a}% and reduces the cooldown of your Grounding Totem by {b} sec."
       },
       "thundering_strikes": {
         "label": "Thundering Strikes",
-        "description": "Improves your chance to get a critical strike with your weapon attacks by 1%."
+        "description": "Improves your chance to get a critical strike with your weapon attacks by {a}%."
       },
       "improved_ghost_wolf": {
         "label": "Improved Ghost Wolf",
-        "description": "Reduces the cast time of your Ghost Wolf spell by 1 sec."
+        "description": "Reduces the cast time of your Ghost Wolf spell by {a} sec."
       },
       "improved_lightning_shield": {
         "label": "Improved Lightning Shield",
-        "description": "Increases the damage done by your Lightning Shield orbs by 5%."
+        "description": "Increases the damage done by your Lightning Shield orbs by {a}%."
       },
       "enhancing_totems": {
         "label": "Enhancing Totems",
-        "description": "Increases the effect of your Strength of Earth and Grace of Air Totems by 8%."
+        "description": "Increases the effect of your Strength of Earth and Grace of Air Totems by {a}%."
       },
       "shamanistic_focus": {
         "label": "Shamanistic Focus",
@@ -692,19 +692,19 @@
       },
       "anticipation": {
         "label": "Anticipation",
-        "description": "Increases your chance to dodge by an additional 1%."
+        "description": "Increases your chance to dodge by an additional {a}%."
       },
       "flurry": {
         "label": "Flurry",
-        "description": "Increases your attack speed by 5% for your next 3 swings after dealing a critical strike."
+        "description": "Increases your attack speed by {a}% for your next 3 swings after dealing a critical strike."
       },
       "toughness": {
         "label": "Toughness",
-        "description": "Increases your armor value from items by 2%, and reduces the duration of movement slowing effects on you by 10%."
+        "description": "Increases your armor value from items by {a}%, and reduces the duration of movement slowing effects on you by {a}%."
       },
       "improved_weapon_totems": {
         "label": "Improved Weapon Totems",
-        "description": "Increases the melee attack power bonus of your Windfury Totem by 15% and increases the damage caused and spell damage granted by your Flametongue Totem by 6%."
+        "description": "Increases the melee attack power bonus of your Windfury Totem by {a}% and increases the damage caused and spell damage granted by your Flametongue Totem by {a}%."
       },
       "spirit_weapons": {
         "label": "Spirit Weapons",
@@ -712,19 +712,19 @@
       },
       "elemental_weapons": {
         "label": "Elemental Weapons",
-        "description": "Increases the damage caused by your Rockbiter Weapon by 7%, your Windfury Weapon effect by 13% and increases the damage caused by your Flametongue Weapon and Frostbrand Weapon by 5%."
+        "description": "Increases the damage caused by your Rockbiter Weapon by {a}%, your Windfury Weapon effect by {b}% and increases the damage caused by your Flametongue Weapon and Frostbrand Weapon by {c}%."
       },
       "mental_quickness": {
         "label": "Mental Quickness",
-        "description": "Reduces the mana cost of your instant cast Shaman spells by 2% and increases your spell damage and healing by an amount equal to 10% of your attack power."
+        "description": "Reduces the mana cost of your instant cast Shaman spells by {a}% and increases your spell damage and healing by an amount equal to {b}% of your attack power."
       },
       "weapon_mastery": {
         "label": "Weapon Mastery",
-        "description": "Increases the damage you deal with all weapons by 1%."
+        "description": "Increases the damage you deal with all weapons by {a}%."
       },
       "weapon_specialization": {
         "label": "Weapon Specialization",
-        "description": "Increases your chance to hit with all weapons by an additional 2%."
+        "description": "Increases your chance to hit with all weapons by an additional {a}%."
       },
       "primal_wielding": {
         "label": "Primal Wielding",
@@ -736,7 +736,7 @@
       },
       "unleashed_rage": {
         "label": "Unleashed Rage",
-        "description": "Causes your critical hits with melee attacks to increase all party and raid members' melee attack power by 55 if within 20 yards of the Shaman.  Lasts 10 seconds."
+        "description": "Causes your critical hits with melee attacks to increase all party and raid members' melee attack power by {a} if within 20 yards of the Shaman.  Lasts 10 seconds."
       },
       "shamanistic_rage": {
         "label": "Shamanistic Rage",
@@ -747,31 +747,31 @@
       "name": "Restoration",
       "improved_healing_wave": {
         "label": "Improved Healing Wave",
-        "description": "Reduces the casting time of your Healing Wave spell by 0.1 sec."
+        "description": "Reduces the casting time of your Healing Wave spell by {a} sec."
       },
       "tidal_focus": {
         "label": "Tidal Focus",
-        "description": "Reduces the mana cost of your healing spells by 1%."
+        "description": "Reduces the mana cost of your healing spells by {a}%."
       },
       "improved_reincarnation": {
         "label": "Improved Reincarnation",
-        "description": "Reduces the cooldown of your Reincarnation spell by 10 min and increases the amount of health and mana you reincarnate with by an additional 10%."
+        "description": "Reduces the cooldown of your Reincarnation spell by {a} min and increases the amount of health and mana you reincarnate with by an additional {a}%."
       },
       "ancestral_healing": {
         "label": "Ancestral Healing",
-        "description": "Increases your target's armor value by 8% for 15 seconds after getting a critical effect from one of your healing spells."
+        "description": "Increases your target's armor value by {a}% for 15 seconds after getting a critical effect from one of your healing spells."
       },
       "totemic_focus": {
         "label": "Totemic Focus",
-        "description": "Reduces the mana cost of your totems by 5%."
+        "description": "Reduces the mana cost of your totems by {a}%."
       },
       "natures_guidance": {
         "label": "Nature's Guidance",
-        "description": "Increases your chance to hit with melee attacks and spells by 1%."
+        "description": "Increases your chance to hit with melee attacks and spells by {a}%."
       },
       "healing_focus": {
         "label": "Healing Focus",
-        "description": "Gives you a 14% chance to avoid interruption caused by damage while casting any Shaman healing spell."
+        "description": "Gives you a {a}% chance to avoid interruption caused by damage while casting any Shaman healing spell."
       },
       "totemic_mastery": {
         "label": "Totemic Mastery",
@@ -779,19 +779,19 @@
       },
       "healing_grace": {
         "label": "Healing Grace",
-        "description": "Reduces the threat generated by your healing spells by 5% and reduces the chance your spells will be dispelled by 10%."
+        "description": "Reduces the threat generated by your healing spells by {a}% and reduces the chance your spells will be dispelled by {b}%."
       },
       "restorative_totems": {
         "label": "Restorative Totems",
-        "description": "Increases the effect of your Mana Spring and Healing Stream Totems by 5%."
+        "description": "Increases the effect of your Mana Spring and Healing Stream Totems by {a}%."
       },
       "tidal_mastery": {
         "label": "Tidal Mastery",
-        "description": "Increases the critical effect chance of your healing and lightning spells by 1%."
+        "description": "Increases the critical effect chance of your healing and lightning spells by {a}%."
       },
       "healing_way": {
         "label": "Healing Way",
-        "description": "Your Healing Wave spells have a 33% chance to increase the effect of subsequent Healing Wave spells on that target by 6% for 15 seconds.  This effect will stack up to 3 times."
+        "description": "Your Healing Wave spells have a {a}% chance to increase the effect of subsequent Healing Wave spells on that target by 6% for 15 seconds.  This effect will stack up to 3 times."
       },
       "natures_swiftness": {
         "label": "Nature's Swiftness",
@@ -799,11 +799,11 @@
       },
       "focused_mind": {
         "label": "Focused Mind",
-        "description": "Reduces the duration of any Silence or Interrupt effects used against the Shaman by 10%. This effect does not stack with other similar effects."
+        "description": "Reduces the duration of any Silence or Interrupt effects used against the Shaman by {a}%. This effect does not stack with other similar effects."
       },
       "purification": {
         "label": "Purification",
-        "description": "Increases the effectiveness of your healing spells by 2%."
+        "description": "Increases the effectiveness of your healing spells by {a}%."
       },
       "mana_tide_totem": {
         "label": "Mana Tide Totem",
@@ -811,15 +811,15 @@
       },
       "natures_guardian": {
         "label": "Nature's Guardian",
-        "description": "Whenever a damaging attack is taken that reduces you below 30% health, you have a 10% chance to heal 10% of your total health and reduce your threat level on that target.  5 second cooldown."
+        "description": "Whenever a damaging attack is taken that reduces you below 30% health, you have a {a}% chance to heal 10% of your total health and reduce your threat level on that target.  5 second cooldown."
       },
       "natures_blessing": {
         "label": "Nature's Blessing",
-        "description": "Increases your spell damage and healing by an amount equal to 10% of your Intellect."
+        "description": "Increases your spell damage and healing by an amount equal to {a}% of your Intellect."
       },
       "improved_chain_heal": {
         "label": "Improved Chain Heal",
-        "description": "Increases the amount healed by your Chain Heal spell by 10%."
+        "description": "Increases the amount healed by your Chain Heal spell by {a}%."
       },
       "earth_shield": {
         "label": "Earth Shield",
