@@ -18,4 +18,4 @@ jobs:
           sed -i -e 's+/epoch_logo+epoch_logo+g' index.html
           sed -i -e 's+assets+epoch-talents/assets+g' index.html
           git commit -a -m "Fix imports"
-          git push origin gh-pages
+          git push
