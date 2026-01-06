@@ -7,6 +7,7 @@ import { subtlety } from '@classes/rogue/subtlety.js'
 import TalentNode from '@base/TalentNode.vue'
 import Arrow from '@base/Arrow.vue'
 import HorizontalArrow from '@base/HorizontalArrow.vue'
+import { pathPart } from '@src/enviroment.js'
 
 export default {
   name: 'RogueView',
@@ -102,16 +103,18 @@ export default {
     const url = window.location.href.split('/')
     if (url.length === 6 && url[5] !== '') {
       let trees = url[5].split('a')
-      Object.keys(this.model.assassination).forEach((item, index) => {
-        this.model.assassination[item] = parseInt(trees[0][index])
-      })
-      Object.keys(this.model.combat).forEach((item, index) => {
-        this.model.combat[item] = parseInt(trees[0][index])
-      })
-      Object.keys(this.model.subtlety).forEach((item, index) => {
-        this.model.subtlety[item] = parseInt(trees[0][index])
-      })
+    } else if (url.length === 5 && url[4] !== '') {
+      let trees = url[4].split('a')
     }
+    Object.keys(this.model.assassination).forEach((item, index) => {
+      this.model.assassination[item] = parseInt(trees[0][index])
+    })
+    Object.keys(this.model.combat).forEach((item, index) => {
+      this.model.combat[item] = parseInt(trees[0][index])
+    })
+    Object.keys(this.model.subtlety).forEach((item, index) => {
+      this.model.subtlety[item] = parseInt(trees[0][index])
+    })
   },
   computed: {
     assassination() {
@@ -130,10 +133,11 @@ export default {
         Object.values(this.model.combat).join('') +
         'a' +
         Object.values(this.model.subtlety).join('')
-      return window.location.href + '/' + str
+      return window.location.href + pathPart() + str
     },
   },
   methods: {
+    pathPart,
     resetTree(tree) {
       Object.keys(this.model[tree]).forEach((item) => {
         this.model[tree][item] = 0
@@ -173,7 +177,7 @@ export default {
       name="rogue"
       spec="assassination"
       :total="assassination_total"
-      image="/epoch-talents/rogue/background-rogue-assassination.avif"
+      :image="pathPart() + 'rogue/background-rogue-assassination.avif'"
       @reset="resetTree($event)"
     >
       <TalentNode
@@ -361,7 +365,7 @@ export default {
       name="rogue"
       spec="combat"
       :total="combat_total"
-      image="/epoch-talents/rogue/background-rogue-combat.avif"
+      :image="pathPart() + 'rogue/background-rogue-combat.avif'"
       @reset="resetTree($event)"
     >
       <TalentNode
@@ -567,7 +571,7 @@ export default {
       name="rogue"
       spec="subtlety"
       :total="subtlety_total"
-      image="/epoch-talents/rogue/background-rogue-subtlety.avif"
+      :image="pathPart() + 'rogue/background-rogue-subtlety.avif'"
       @reset="resetTree($event)"
     >
       <div></div>

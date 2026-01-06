@@ -6,6 +6,7 @@ import Arrow from '@base/Arrow.vue'
 import { arms } from './arms.js'
 import { fury } from './fury.js'
 import { protection } from './protection.js'
+import { pathPart } from '@src/enviroment.js'
 
 export default {
   name: 'WarriorView',
@@ -132,10 +133,11 @@ export default {
         Object.values(this.model.fury).join('') +
         'a' +
         Object.values(this.model.protection).join('')
-      return window.location.href + '/' + str
+      return window.location.href + pathPart() + str
     },
   },
   methods: {
+    pathPart,
     resetTree(tree) {
       Object.keys(this.model[tree]).forEach((item) => {
         this.model[tree][item] = 0
@@ -175,7 +177,7 @@ export default {
       name="warrior"
       spec="arms"
       :total="arms_total"
-      image="/epoch-talents/warrior/background-warrior-arms.avif"
+      :image="pathPart() + 'warrior/background-warrior-arms.avif'"
       @reset="resetTree($event)"
     >
       <TalentNode
@@ -381,7 +383,7 @@ export default {
       name="warrior"
       spec="fury"
       :total="fury_total"
-      image="/epoch-talents/warrior/background-warrior-fury.avif"
+      :image="pathPart() + 'warrior/background-warrior-fury.avif'"
       @reset="resetTree($event)"
     >
       <div></div>
@@ -556,7 +558,7 @@ export default {
       name="warrior"
       spec="protection"
       :total="protection_total"
-      image="/epoch-talents/warrior/background-warrior-protection.avif"
+      :image="pathPart() + 'warrior/background-warrior-protection.avif'"
       @reset="resetTree($event)"
     >
       <TalentNode
