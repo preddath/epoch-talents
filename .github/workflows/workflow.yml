@@ -17,5 +17,5 @@ jobs:
           git config --global user.email "ci@example.com"
           sed -i -e 's+/epoch_logo+epoch_logo+g' index.html
           sed -i -e 's+assets+epoch-talents/assets+g' index.html
-          git commit --verbose -m "Fix imports"
+          git commit -a -m "Fix imports"
           git push origin gh-pages
