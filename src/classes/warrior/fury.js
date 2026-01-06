@@ -130,7 +130,8 @@ export const fury = {
   single_minded_fury: {
     max: 1,
     totalRequirement: 40,
-    path: 'ability_warrior_rampage.webp',
+    path: 'ability_warrior_incite.jpg',
     levels: [[1]],
+    spellIds: ['150068'],
   },
 }
