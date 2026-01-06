@@ -101,20 +101,24 @@ export default {
   },
   mounted() {
     const url = window.location.href.split('/')
+    console.log(url.length)
+    let trees = false
     if (url.length === 6 && url[5] !== '') {
-      let trees = url[5].split('a')
+      trees = url[5].split('a')
     } else if (url.length === 5 && url[4] !== '') {
-      let trees = url[4].split('a')
+      trees = url[4].split('a')
     }
-    Object.keys(this.model.assassination).forEach((item, index) => {
-      this.model.assassination[item] = parseInt(trees[0][index])
-    })
-    Object.keys(this.model.combat).forEach((item, index) => {
-      this.model.combat[item] = parseInt(trees[0][index])
-    })
-    Object.keys(this.model.subtlety).forEach((item, index) => {
-      this.model.subtlety[item] = parseInt(trees[0][index])
-    })
+    if (trees) {
+      Object.keys(this.model.assassination).forEach((item, index) => {
+        this.model.assassination[item] = parseInt(trees[0][index])
+      })
+      Object.keys(this.model.combat).forEach((item, index) => {
+        this.model.combat[item] = parseInt(trees[1][index])
+      })
+      Object.keys(this.model.subtlety).forEach((item, index) => {
+        this.model.subtlety[item] = parseInt(trees[2][index])
+      })
+    }
   },
   computed: {
     assassination() {

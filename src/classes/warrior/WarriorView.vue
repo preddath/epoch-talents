@@ -109,10 +109,10 @@ export default {
         this.model.arms[item] = parseInt(trees[0][index])
       })
       Object.keys(this.model.fury).forEach((item, index) => {
-        this.model.fury[item] = parseInt(trees[0][index])
+        this.model.fury[item] = parseInt(trees[1][index])
       })
       Object.keys(this.model.protection).forEach((item, index) => {
-        this.model.protection[item] = parseInt(trees[0][index])
+        this.model.protection[item] = parseInt(trees[2][index])
       })
     }
   },
