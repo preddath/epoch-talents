@@ -1,4 +1,6 @@
 <script>
+import { pathPart } from '@src/enviroment.js'
+
 export default {
   name: 'Arrow',
   props: {
@@ -32,6 +34,7 @@ export default {
     })
   },
   methods: {
+    pathPart,
     setStart() {
       const startElement = this.startElement.getBoundingClientRect()
       const tree = this.treeElement.getBoundingClientRect()
@@ -59,7 +62,13 @@ export default {
     class="absolute flex flex-col items-center z-10"
     :style="startPosition"
   >
-    <div style="background-image: url('/arrow_body.webp')" :style="elementHeight" class="w-4.25" />
-    <div style="background-image: url('/arrow_head.webp'); height: 15px" class="w-6.25 -mt-px" />
+    <div
+      :style="`background-image: url('` + pathPart() + `arrow_body.webp');` + elementHeight"
+      class="w-4.25"
+    />
+    <div
+      :style="`background-image: url('` + pathPart() + `arrow_head.webp'); height: 15px`"
+      class="w-6.25 -mt-px"
+    />
   </div>
 </template>
