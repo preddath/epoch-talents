@@ -50,7 +50,7 @@ export default {
       const startElement = this.startElement.getBoundingClientRect()
       const endElement = this.endElement.getBoundingClientRect()
 
-      this.elementHeight = 'height:' + (endElement.top - startElement.bottom - 12) + 'px;'
+      this.elementHeight = 'height:' + (endElement.top - startElement.bottom - 10) + 'px;'
     },
   },
 }
@@ -67,8 +67,12 @@ export default {
       class="w-4.25"
     />
     <div
-      :style="`background-image: url('` + pathPart() + `arrow_head.webp'); height: 15px`"
-      class="w-6.25 -mt-px"
+      :style="
+        `background-image: url('` +
+        pathPart() +
+        `arrow_head.webp'); height: 15px; margin-top: -3px;`
+      "
+      class="w-6.25"
     />
   </div>
 </template>
