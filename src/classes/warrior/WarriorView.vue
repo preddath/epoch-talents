@@ -133,7 +133,7 @@ export default {
         Object.values(this.model.fury).join('') +
         'a' +
         Object.values(this.model.protection).join('')
-      return window.location.href + pathPart() + str
+      return window.location.href + '/' + str
     },
   },
   methods: {

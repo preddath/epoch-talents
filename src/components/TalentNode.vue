@@ -159,7 +159,7 @@ export default {
     <p v-if="!active" class="text-red-400">
       {{ m.needed_rank({ a: totalRequirement, b: m[spec + '.name']() }) }}
     </p>
-    <p v-html="texts.current" class="text-amber-400 font-semibold" />
+    <p v-html="texts.current" class="text-amber-400" />
     <template v-if="texts.next && modelValue >= 1">
       <hr class="my-2" />
       <p class="text-white">{{ m.next_level() }}:</p>
