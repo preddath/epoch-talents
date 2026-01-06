@@ -100,10 +100,6 @@ export default {
     let trees = false
     if (url.length === 6 && url[5] !== '') {
       trees = url[5].split('a')
-    } else if (url.length === 5 && url[4] !== '') {
-      trees = url[4].split('a')
-    }
-    if (trees) {
       Object.keys(this.model.elemental).forEach((item, index) => {
         this.model.elemental[item] = parseInt(trees[0][index])
       })

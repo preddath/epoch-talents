@@ -1,4 +1,6 @@
 <script>
+import { pathPart } from '@src/enviroment.js'
+
 export default {
   name: 'LeftArrow',
   props: {
@@ -36,6 +38,7 @@ export default {
     })
   },
   methods: {
+    pathPart,
     setStart() {
       const startElement = this.endElement.getBoundingClientRect()
       const tree = this.treeElement.getBoundingClientRect()
@@ -66,12 +69,12 @@ export default {
   >
     <div
       v-if="!headless"
-      style="background-image: url('/arrow_head_l.webp'); height: 25px"
+      :style="`background-image: url('` + pathPart() + `arrow_head_l.webp'); height: 25px`"
       class="w-4 -ml-1 z-10"
     />
     <div
-      style="background-image: url('/arrow_body_h.webp'); height: 17px; margin-left: -2px"
-      :style="elementWidth"
+      style="height: 17px; margin-left: -2px"
+      :style="elementWidth + `background-image: url('` + pathPart() + `arrow_body_h.webp');`"
     />
   </div>
 </template>
