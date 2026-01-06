@@ -1,14 +1,20 @@
 <script>
 import NavPoint from '@base/NavPoint.vue'
+import { pathPart } from '@src/enviroment.js'
 export default {
   name: 'Navigation',
+  methods: { pathPart },
   components: { NavPoint },
 }
 </script>
 
 <template>
   <div class="flex h-12 bg-zinc-800 px-8">
-    <div class="w-1/3"></div>
+    <div class="w-1/3 flex justify-start items-center">
+      <a href="https://ascension.gg" target="_blank"
+        ><img :src="pathPart() + 'epoch-full-logo.webp'" alt="Project Epoch" class="h-8"
+      /></a>
+    </div>
     <nav class="flex items-center justify-center gap-3 px-4 w-1/3">
       <NavPoint name="rogue" />
       <NavPoint name="shaman" />
