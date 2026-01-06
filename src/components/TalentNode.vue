@@ -1,6 +1,7 @@
 <script>
 import Popup from '@base/Popup.vue'
 import { m } from '@src/paraglide/messages.js'
+import { pathPart } from '@src/enviroment.js'
 
 export default {
   name: 'TalentNode',
@@ -46,6 +47,7 @@ export default {
   },
   emits: ['update:modelValue'],
   methods: {
+    pathPart,
     handleClick() {
       if (this.active && this.modelValue < this.max) {
         this.$emit('update:modelValue', this.modelValue + 1)
@@ -137,7 +139,7 @@ export default {
     :name="spec + '_' + name"
   >
     <img
-      :src="'../' + path"
+      :src="pathPart() + path"
       :alt="name"
       :style="active ? 'filter: none;' : 'filter: grayscale(1);'"
       class="rounded-lg"
