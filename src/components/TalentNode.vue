@@ -203,10 +203,10 @@ export default {
       <p class="text-white">{{ m.next_level() }}:</p>
       <p v-html="texts.next" class="text-amber-400" />
     </template>
-    <p class="text-green-400 text-sm font-semibold" v-if="active && modelValue < max">
+    <p class="text-green-400 font-semibold" v-if="active && modelValue < max">
       {{ m.click_increase() }}
     </p>
-    <p class="text-green-400 text-sm font-semibold" v-else-if="active">
+    <p class="text-green-400 font-semibold" v-else-if="active">
       {{ m.click_decrease() }}
     </p>
   </Popup>

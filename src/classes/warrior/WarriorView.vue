@@ -178,6 +178,7 @@ export default {
       spec="arms"
       :total="arms_total"
       :image="pathPart() + 'warrior/background-warrior-arms.avif'"
+      :icon="pathPart() + 'ability_warrior_savageblow.webp'"
       @reset="resetTree($event)"
     >
       <TalentNode
@@ -382,6 +383,7 @@ export default {
       spec="fury"
       :total="fury_total"
       :image="pathPart() + 'warrior/background-warrior-fury.avif'"
+      :icon="pathPart() + 'ability_warrior_innerrage.webp'"
       @reset="resetTree($event)"
     >
       <div></div>
@@ -557,6 +559,7 @@ export default {
       spec="protection"
       :total="protection_total"
       :image="pathPart() + 'warrior/background-warrior-protection.avif'"
+      :icon="pathPart() + 'ability_warrior_defensivestance.webp'"
       @reset="resetTree($event)"
     >
       <TalentNode

@@ -6,6 +6,7 @@ export default {
     name: String,
     spec: String,
     image: String,
+    icon: String,
     total: Number,
   },
   computed: {
@@ -19,10 +20,11 @@ export default {
 <template>
   <div class="w-1/5 bg-gray-500 rounded-lg overflow-hidden">
     <header class="h-12 bg-zinc-700 flex items-center text-amber-400 font-bold text-2xl">
+      <img :src="icon" alt="spec" class="h-10 rounded-full ml-1" />
       <p class="grow flex justify-center">{{ label }} ({{ total }})</p>
       <button
         type="button"
-        class="bg-red-900 w-4 h-4 cursor-pointer mx-4 text-white text-sm text-center"
+        class="bg-red-900 w-5 h-5 cursor-pointer mx-4 text-white text-sm text-center"
         @click="$emit('reset', spec)"
       >
         X

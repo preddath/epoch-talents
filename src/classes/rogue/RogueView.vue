@@ -177,6 +177,7 @@ export default {
       spec="assassination"
       :total="assassination_total"
       :image="pathPart() + 'rogue/background-rogue-assassination.avif'"
+      :icon="pathPart() + 'ability_rogue_eviscerate.webp'"
       @reset="resetTree($event)"
     >
       <TalentNode
@@ -363,6 +364,7 @@ export default {
       spec="combat"
       :total="combat_total"
       :image="pathPart() + 'rogue/background-rogue-combat.avif'"
+      :icon="pathPart() + 'ability_backstab.webp'"
       @reset="resetTree($event)"
     >
       <TalentNode
@@ -567,6 +569,7 @@ export default {
       spec="subtlety"
       :total="subtlety_total"
       :image="pathPart() + 'rogue/background-rogue-subtlety.avif'"
+      :icon="pathPart() + 'ability_stealth.webp'"
       @reset="resetTree($event)"
     >
       <div></div>

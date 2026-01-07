@@ -175,6 +175,7 @@ export default {
       spec="elemental"
       :total="elemental_total"
       :image="pathPart() + 'shaman/background-shaman-elemental.avif'"
+      :icon="pathPart() + 'spell_nature_lightning.webp'"
       @reset="resetTree($event)"
     >
       <div></div>
@@ -351,6 +352,7 @@ export default {
       spec="enhancement"
       :total="enhancement_total"
       :image="pathPart() + 'shaman/background-shaman-enhancement.avif'"
+      :icon="pathPart() + 'spell_nature_lightningshield.webp'"
       @reset="resetTree($event)"
     >
       <div></div>
@@ -534,6 +536,7 @@ export default {
       spec="restoration"
       :total="restoration_total"
       :image="pathPart() + 'shaman/background-shaman-restoration.avif'"
+      :icon="pathPart() + 'spell_nature_magicimmunity.webp'"
       @reset="resetTree($event)"
     >
       <div></div>
