@@ -128,7 +128,7 @@ export default {
         Object.values(this.model.enhancement).join('') +
         'a' +
         Object.values(this.model.restoration).join('')
-      return window.location.href + str
+      return window.location.href + (window.location.href.endsWith('/') ? '' : '/') + str
     },
   },
   methods: {
