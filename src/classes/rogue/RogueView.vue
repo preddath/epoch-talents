@@ -577,14 +577,12 @@ export default {
         v-model="model.subtlety.master_of_deception"
         v-bind="subtlety.master_of_deception"
         name="master_of_deception"
-        :total="subtlety_total"
         spec="rogue.subtlety"
       />
       <TalentNode
         v-model="model.subtlety.opportunity"
         v-bind="subtlety.opportunity"
         name="opportunity"
-        :total="subtlety_total"
         spec="rogue.subtlety"
       />
       <div></div>
@@ -593,21 +591,18 @@ export default {
         v-model="model.subtlety.sleight_of_hand"
         v-bind="subtlety.sleight_of_hand"
         name="sleight_of_hand"
-        :total="subtlety_total"
         spec="rogue.subtlety"
       />
       <TalentNode
         v-model="model.subtlety.dirty_tricks"
         v-bind="subtlety.dirty_tricks"
         name="dirty_tricks"
-        :total="subtlety_total"
         spec="rogue.subtlety"
       />
       <TalentNode
         v-model="model.subtlety.camouflage"
         v-bind="subtlety.camouflage"
         name="camouflage"
-        :total="subtlety_total"
         spec="rogue.subtlety"
       />
       <div></div>
@@ -616,21 +611,18 @@ export default {
         v-model="model.subtlety.initiative"
         v-bind="subtlety.initiative"
         name="initiative"
-        :total="subtlety_total"
         spec="rogue.subtlety"
       />
       <TalentNode
         v-model="model.subtlety.ghostly_strike"
         v-bind="subtlety.ghostly_strike"
         name="ghostly_strike"
-        :total="subtlety_total"
         spec="rogue.subtlety"
       />
       <TalentNode
         v-model="model.subtlety.improved_ambush"
         v-bind="subtlety.improved_ambush"
         name="improved_ambush"
-        :total="subtlety_total"
         spec="rogue.subtlety"
       />
       <div></div>
@@ -639,21 +631,18 @@ export default {
         v-model="model.subtlety.setup"
         v-bind="subtlety.setup"
         name="setup"
-        :total="subtlety_total"
         spec="rogue.subtlety"
       />
       <TalentNode
         v-model="model.subtlety.elusiveness"
         v-bind="subtlety.elusiveness"
         name="elusiveness"
-        :total="subtlety_total"
         spec="rogue.subtlety"
       />
       <TalentNode
         v-model="model.subtlety.serrated_blades"
         v-bind="subtlety.serrated_blades"
         name="serrated_blades"
-        :total="subtlety_total"
         spec="rogue.subtlety"
       />
       <HorizontalArrow
@@ -669,14 +658,12 @@ export default {
         v-model="model.subtlety.heightened_senses"
         v-bind="subtlety.heightened_senses"
         name="heightened_senses"
-        :total="subtlety_total"
         spec="rogue.subtlety"
       />
       <TalentNode
         v-model="model.subtlety.preparation"
         v-bind="subtlety.preparation"
         name="preparation"
-        :total="subtlety_total"
         spec="rogue.subtlety"
       />
       <Arrow from="preparation" to="premeditation" tree="tree_subtlety" />
@@ -684,14 +671,12 @@ export default {
         v-model="model.subtlety.dirty_deeds"
         v-bind="subtlety.dirty_deeds"
         name="dirty_deeds"
-        :total="subtlety_total"
         spec="rogue.subtlety"
       />
       <TalentNode
         v-model="model.subtlety.hemorrhage"
         v-bind="subtlety.hemorrhage"
         name="hemorrhage"
-        :total="subtlety_total"
         spec="rogue.subtlety"
       />
 
@@ -699,7 +684,6 @@ export default {
         v-model="model.subtlety.master_of_subtlety"
         v-bind="subtlety.master_of_subtlety"
         name="master_of_subtlety"
-        :total="subtlety_total"
         spec="rogue.subtlety"
       />
       <div></div>
@@ -707,7 +691,6 @@ export default {
         v-model="model.subtlety.deadliness"
         v-bind="subtlety.deadliness"
         name="deadliness"
-        :total="subtlety_total"
         spec="rogue.subtlety"
       />
       <div></div>
@@ -716,14 +699,12 @@ export default {
         v-model="model.subtlety.enveloping_shadows"
         v-bind="subtlety.enveloping_shadows"
         name="enveloping_shadows"
-        :total="subtlety_total"
         spec="rogue.subtlety"
       />
       <TalentNode
         v-model="model.subtlety.premeditation"
         v-bind="subtlety.premeditation"
         name="premeditation"
-        :total="subtlety_total"
         spec="rogue.subtlety"
       />
       <Arrow from="premeditation" to="sinister_calling" tree="tree_subtlety" />
@@ -731,7 +712,6 @@ export default {
         v-model="model.subtlety.cheat_death"
         v-bind="subtlety.cheat_death"
         name="cheat_death"
-        :total="subtlety_total"
         spec="rogue.subtlety"
       />
       <div></div>
@@ -741,7 +721,6 @@ export default {
         v-model="model.subtlety.sinister_calling"
         v-bind="subtlety.sinister_calling"
         name="sinister_calling"
-        :total="subtlety_total"
         spec="rogue.subtlety"
       />
       <div></div>
@@ -752,7 +731,6 @@ export default {
         v-model="model.subtlety.shadowstep"
         v-bind="subtlety.shadowstep"
         name="shadowstep"
-        :total="subtlety_total"
         spec="rogue.subtlety"
       />
       <div></div>

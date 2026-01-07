@@ -25,10 +25,6 @@ export default {
       type: Number,
       required: true,
     },
-    total: {
-      type: Number,
-      required: true,
-    },
     totalRequirement: {
       type: Number,
       required: true,
@@ -115,20 +111,33 @@ export default {
     model() {
       return this.$parent.$parent.$parent.model[this.spec.split('.')[1]]
     },
+    maxedOut() {
+      return this.$parent.$parent.$parent.total >= 61
+    },
+    spec_total() {
+      return this.$parent.$parent.$parent[this.spec.split('.')[1] + '_total']
+    },
     active() {
       return (
-        this.totalRequirement <= this.total &&
+        !this.maxedOut &&
+        this.totalRequirement <= this.spec_total &&
         (!this.requires || this.model[this.requires] === this.requiredTalent.max)
       )
+    },
+    color() {
+      if (this.active || (this.maxedOut && this.modelValue > 0)) {
+        return 'filter: none;'
+      }
+      return 'filter: grayscale(1);'
     },
     classes() {
       let classes = ''
       if (this.active && this.modelValue < this.max) {
-        classes += 'border-green-400'
+        classes += 'border-green-400 text-green-400'
       } else if (this.active && this.modelValue === this.max) {
         classes += 'border-amber-400'
       } else {
-        classes += 'border-gray-400'
+        classes += 'border-gray-400 text-gray-400'
       }
       return classes
     },
@@ -164,12 +173,13 @@ export default {
     <img
       :src="pathPart() + path"
       :alt="name"
-      :style="active ? 'filter: none;' : 'filter: grayscale(1);'"
+      :style="color"
       class="rounded-lg"
       style="user-select: none; user-drag: none"
     />
     <span
-      class="absolute bg-zinc-700 rounded border text-amber-400 border-amber-400 px-1 z-20 text-[0.65rem] font-semibold -bottom-2 -right-2"
+      class="absolute bg-zinc-700 rounded border text-amber-400 px-1 z-20 text-[0.65rem] font-semibold -bottom-2 -right-2"
+      :class="classes"
       >{{ modelValue }}/{{ max }}</span
     >
   </div>
