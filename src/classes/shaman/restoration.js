@@ -92,7 +92,7 @@ export const restoration = {
     max: 1,
     totalRequirement: 20,
     path: 'spell_nature_ravenform.webp',
-    abilityData: {
+    ability: {
       castTime: 'Instant',
       cooldown: '3 min',
     },
@@ -118,7 +118,7 @@ export const restoration = {
     totalRequirement: 30,
     requires: 'restorative_totems',
     path: 'spell_frost_summonwaterelemental.webp',
-    abilityData: {
+    ability: {
       castTime: 'Instant',
       cooldown: '5 min',
       items: 'Water Totem',
@@ -152,7 +152,7 @@ export const restoration = {
     totalRequirement: 40,
     requires: 'natures_blessing',
     path: 'spell_nature_skinofearth.webp',
-    abilityData: {
+    ability: {
       cost: '300 Mana',
       castTime: 'Instant',
       range: '40 yards',

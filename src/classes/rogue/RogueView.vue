@@ -279,7 +279,6 @@ export default {
         name="cold_blooded"
         :total="assassination_total"
         spec="rogue.assassination"
-        ability
       />
       <TalentNode
         v-model="model.assassination.improved_kidney_shot"
@@ -334,7 +333,6 @@ export default {
         name="deadened_nerves"
         :total="assassination_total"
         spec="rogue.assassination"
-        ability
       />
       <div></div>
 
@@ -427,7 +425,6 @@ export default {
         name="riposte"
         :total="combat_total"
         spec="rogue.combat"
-        ability
       />
       <div></div>
       <TalentNode
@@ -480,7 +477,6 @@ export default {
         name="blade_flurry"
         :total="combat_total"
         spec="rogue.combat"
-        ability
       />
       <TalentNode
         v-model="model.combat.sword_specialization"

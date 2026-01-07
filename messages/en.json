@@ -4,6 +4,7 @@
   "next_level": "Next Rank",
   "rank": "Rank",
   "needed_rank": "Requires {a} points in {b} Talents",
+  "needed_talent": "Requires {a} points in {b}",
   "click_increase": "Click to learn",
   "click_decrease": "Right click to unlearn",
   "warrior": {

@@ -159,7 +159,7 @@ export const enhancement = {
       castTime: 'Instant',
       range: 'Melee Range',
       cooldown: '10 seconds',
-      item: ['Melee Weapon'],
+      items: 'Requires Melee Weapon',
     },
   },
   unleashed_rage: {

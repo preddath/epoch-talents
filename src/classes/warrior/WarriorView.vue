@@ -286,7 +286,6 @@ export default {
         :total="arms_total"
         v-model="model.arms.sweeping_strikes"
         spec="warrior.arms"
-        ability
       />
       <Arrow to="mortal_strike" from="sweeping_strikes" tree="tree_arms" />
       <TalentNode
@@ -340,7 +339,6 @@ export default {
         :total="arms_total"
         v-model="model.arms.mortal_strike"
         spec="warrior.arms"
-        ability
       />
       <TalentNode
         name="second_wind"
@@ -608,7 +606,6 @@ export default {
         :total="protection_total"
         v-model="model.protection.last_stand"
         spec="warrior.protection"
-        ability
       />
       <TalentNode
         name="improved_shield_block"
@@ -709,7 +706,6 @@ export default {
         :total="protection_total"
         v-model="model.protection.shield_slam"
         spec="warrior.protection"
-        ability
       />
       <TalentNode
         name="focused_rage"
@@ -738,7 +734,6 @@ export default {
         :total="protection_total"
         v-model="model.protection.devestate"
         spec="warrior.protection"
-        ability
       />
       <div></div>
       <div></div>

@@ -37,15 +37,27 @@ export default {
       type: Number,
       required: true,
     },
+    requires: {
+      type: String,
+      required: false,
+    },
     ability: {
-      type: Boolean,
-      default: false,
+      type: Object,
+      default: null,
     },
     levels: {
       type: Array,
     },
+    spellIds: {
+      type: Array,
+    },
   },
   emits: ['update:modelValue'],
+  data() {
+    return {
+      requiredTalent: null,
+    }
+  },
   methods: {
     pathPart,
     handleClick() {
@@ -91,12 +103,23 @@ export default {
       }
     },
   },
+  mounted() {
+    if (this.requires) {
+      this.requiredTalent = this.$parent.$parent.$parent[this.spec.split('.')[1]][this.requires]
+    }
+  },
   computed: {
     m() {
       return m
     },
+    model() {
+      return this.$parent.$parent.$parent.model[this.spec.split('.')[1]]
+    },
     active() {
-      return this.totalRequirement <= this.total
+      return (
+        this.totalRequirement <= this.total &&
+        (!this.requires || this.model[this.requires] === this.requiredTalent.max)
+      )
     },
     classes() {
       let classes = ''
@@ -153,12 +176,27 @@ export default {
   <Popup :to="spec + '_' + name">
     <header class="text-xl font-bold flex items-center justify-between">
       <p class="text-white">{{ label }}</p>
-      <p class="text-sm pr-4" v-if="ability">{{ m.ability() }}</p>
+      <p class="text-sm px-2 bg-amber-400 text-black text-center rounded" v-if="ability !== null">
+        {{ m.ability() }}
+      </p>
     </header>
-    <p class="text-white">{{ m.rank() }} {{ modelValue }}/{{ max }}</p>
+    <div class="flex justify-between text-white text-xs">
+      <p>{{ m.rank() }} {{ modelValue }}/{{ max }}</p>
+      <p>ID: {{ spellIds[modelValue - 1] ?? spellIds[modelValue] }}</p>
+    </div>
     <p v-if="!active" class="text-red-400">
       {{ m.needed_rank({ a: totalRequirement, b: m[spec + '.name']() }) }}
     </p>
+    <p v-if="!active && requiredTalent !== null" class="text-red-400">
+      {{ m.needed_talent({ a: requiredTalent.max, b: m[spec + '.' + requires + '.label']() }) }}
+    </p>
+    <div v-if="ability" class="flex flex-wrap text-white my-2">
+      <div class="w-1/2 text-start">{{ ability.castTime }}</div>
+      <div class="w-1/2 text-end">{{ ability.cooldown }}</div>
+      <div class="w-1/2 text-start">{{ ability.range }}</div>
+      <div class="w-1/2 text-end">{{ ability.cost }}</div>
+      <div class="w-full font-semibold">{{ ability.items }}</div>
+    </div>
     <p v-html="texts.current" class="text-amber-400" />
     <template v-if="texts.next && modelValue >= 1">
       <hr class="my-2" />
