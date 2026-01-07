@@ -134,7 +134,10 @@ export default {
       let classes = ''
       if (this.active && this.modelValue < this.max) {
         classes += 'border-green-400 text-green-400'
-      } else if (this.active && this.modelValue === this.max) {
+      } else if (
+        (this.active && this.modelValue === this.max) ||
+        (this.maxedOut && this.modelValue > 0)
+      ) {
         classes += 'border-amber-400'
       } else {
         classes += 'border-gray-400 text-gray-400'
