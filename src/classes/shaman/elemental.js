@@ -164,7 +164,7 @@ export const elemental = {
     ability: {
       cost: '5% of base mana',
       castTime: 'Instant',
-      item: 'Fire Totem',
+      items: 'Fire Totem',
     },
   },
 }
