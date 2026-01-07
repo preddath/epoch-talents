@@ -24,7 +24,7 @@ export const assassination = {
   ruthlessness: {
     max: 3,
     totalRequirement: 5,
-    path: 'ability_rogue_eviscerate.webp',
+    path: 'ability_druid_disembowel.webp',
     spellIds: ['14156', '14160', '14161'],
     levels: [[20, 40, 60]],
   },
