@@ -112,7 +112,10 @@ export const elemental = {
   },
   elemental_precision: {
     spellIds: ['30672', '30673', '30674'],
-    levels: [[2, 4, 6]],
+    levels: [
+      [2, 4, 6],
+      [4, 7, 10],
+    ],
     max: 3,
     totalRequirement: 25,
     path: 'spell_nature_elementalprecision.webp',
