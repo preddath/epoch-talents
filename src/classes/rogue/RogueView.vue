@@ -8,6 +8,8 @@ import TalentNode from '@base/TalentNode.vue'
 import Arrow from '@base/Arrow.vue'
 import RightArrow from '@base/RightArrow.vue'
 import { pathPart } from '@src/enviroment.js'
+import { useCurrentStore } from '@src/stores/current.js'
+import { resetTotal, resetTree, share } from '@src/ClassModule.js'
 
 export default {
   name: 'RogueView',
@@ -125,6 +127,9 @@ export default {
     subtlety() {
       return subtlety
     },
+    currentStore() {
+      return useCurrentStore()
+    },
     shareLink() {
       let str =
         Object.values(this.model.assassination).join('') +
@@ -137,14 +142,9 @@ export default {
   },
   methods: {
     pathPart,
-    resetTree(tree) {
-      Object.keys(this.model[tree]).forEach((item) => {
-        this.model[tree][item] = 0
-      })
-    },
-    share() {
-      navigator.clipboard.writeText(this.shareLink)
-    },
+    resetTree,
+    resetTotal,
+    share,
   },
   watch: {
     model: {
@@ -163,6 +163,7 @@ export default {
         this.combat_total = combat
         this.subtlety_total = subtlety
         this.total = assassination + combat + subtlety
+        this.currentStore.total = this.total
       },
       deep: true,
     },
@@ -171,7 +172,7 @@ export default {
 </script>
 
 <template>
-  <ClassView @share="share()">
+  <ClassView @share="share()" @reset="resetTotal()">
     <BaseTree
       name="rogue"
       spec="assassination"

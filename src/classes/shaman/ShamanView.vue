@@ -9,6 +9,8 @@ import Arrow from '@base/Arrow.vue'
 import RightArrow from '@base/RightArrow.vue'
 import LeftArrow from '@base/LeftArrow.vue'
 import { restoration } from '@classes/shaman/restoration.js'
+import { useCurrentStore } from '@src/stores/current.js'
+import { resetTotal, resetTree, share } from '@src/ClassModule.js'
 
 export default {
   name: 'ShamanView',
@@ -121,6 +123,9 @@ export default {
     enhancement() {
       return enhancement
     },
+    currentStore() {
+      return useCurrentStore()
+    },
     shareLink() {
       let str =
         Object.values(this.model.elemental).join('') +
@@ -132,15 +137,10 @@ export default {
     },
   },
   methods: {
+    resetTree,
+    resetTotal,
+    share,
     pathPart,
-    resetTree(tree) {
-      Object.keys(this.model[tree]).forEach((item) => {
-        this.model[tree][item] = 0
-      })
-    },
-    share() {
-      navigator.clipboard.writeText(this.shareLink)
-    },
   },
   watch: {
     model: {
@@ -161,6 +161,7 @@ export default {
         this.enhancement_total = enhancement
         this.restoration_total = restoration
         this.total = elemental + enhancement + restoration
+        this.currentStore.total = this.total
       },
       deep: true,
     },
@@ -169,7 +170,7 @@ export default {
 </script>
 
 <template>
-  <ClassView @share="share()">
+  <ClassView @share="share()" @reset="resetTotal()">
     <BaseTree
       name="shaman"
       spec="elemental"

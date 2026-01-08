@@ -17,7 +17,7 @@ export default {
 </script>
 
 <template>
-  <Navigation @share="share()" />
+  <Navigation @share="share()" @reset="$emit('reset')" />
   <div
     ref="alert"
     popover="auto"

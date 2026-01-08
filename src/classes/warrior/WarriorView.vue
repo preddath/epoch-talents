@@ -7,6 +7,8 @@ import { arms } from './arms.js'
 import { fury } from './fury.js'
 import { protection } from './protection.js'
 import { pathPart } from '@src/enviroment.js'
+import { useCurrentStore } from '@src/stores/current.js'
+import { resetTotal, resetTree, share } from '@src/ClassModule.js'
 
 export default {
   name: 'WarriorView',
@@ -126,6 +128,9 @@ export default {
     protection() {
       return protection
     },
+    currentStore() {
+      return useCurrentStore()
+    },
     shareLink() {
       let str =
         Object.values(this.model.arms).join('') +
@@ -138,14 +143,9 @@ export default {
   },
   methods: {
     pathPart,
-    resetTree(tree) {
-      Object.keys(this.model[tree]).forEach((item) => {
-        this.model[tree][item] = 0
-      })
-    },
-    share() {
-      navigator.clipboard.writeText(this.shareLink)
-    },
+    resetTree,
+    resetTotal,
+    share,
   },
   watch: {
     model: {
@@ -164,6 +164,7 @@ export default {
         this.fury_total = fury
         this.protection_total = protection
         this.total = arms + fury + protection
+        this.currentStore.total = this.total
       },
       deep: true,
     },
@@ -172,7 +173,7 @@ export default {
 </script>
 
 <template>
-  <ClassView @share="share()">
+  <ClassView @share="share()" @reset="resetTotal()">
     <BaseTree
       name="warrior"
       spec="arms"

@@ -7,6 +7,7 @@ import popup from '@src/directives/popup.js'
 const app = createApp(App)
 
 app.directive('popup', (el, binding) => popup(el, binding))
+app.use(createPinia())
 app.use(router)
 
 app.mount('#app')

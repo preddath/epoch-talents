@@ -16,15 +16,15 @@ export default {
       /></a>
     </div>
     <nav class="flex items-center justify-center gap-3 px-4 w-1/3">
-      <NavPoint name="rogue" />
-      <NavPoint name="shaman" />
-      <NavPoint name="hunter" />
-      <NavPoint name="warrior" />
-      <NavPoint name="paladin" />
-      <NavPoint name="druid" />
-      <NavPoint name="priest" />
-      <NavPoint name="warlock" />
-      <NavPoint name="mage" />
+      <NavPoint @reset="$emit('reset')" name="rogue" />
+      <NavPoint @reset="$emit('reset')" name="shaman" />
+      <NavPoint @reset="$emit('reset')" name="hunter" />
+      <NavPoint @reset="$emit('reset')" name="warrior" />
+      <NavPoint @reset="$emit('reset')" name="paladin" />
+      <NavPoint @reset="$emit('reset')" name="druid" />
+      <NavPoint @reset="$emit('reset')" name="priest" />
+      <NavPoint @reset="$emit('reset')" name="warlock" />
+      <NavPoint @reset="$emit('reset')" name="mage" />
     </nav>
     <div class="w-1/3 flex justify-end items-center">
       <button
