@@ -972,7 +972,7 @@
       },
       "combats_experience": {
         "label": "Combat Experience",
-        "description": "Increases your total Agility by 1% and your total Intellect by 3%."
+        "description": "Increases your total Agility by {a}% and your total Intellect by {b}%."
       },
       "ranged_weapon_specialization": {
         "label": "Ranged Weapon Specialization",
