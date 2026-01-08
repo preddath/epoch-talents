@@ -480,6 +480,7 @@ export default {
         :total="combat_total"
         spec="rogue.combat"
       />
+      <Arrow from="blade_flurry" to="weapon_expertise" tree="tree_assassination" />
       <TalentNode
         v-model="model.combat.sword_specialization"
         v-bind="combat.sword_specialization"
