@@ -4,6 +4,7 @@ import RogueView from '@classes/rogue/RogueView.vue'
 import { pathPart } from '@src/enviroment.js'
 import ShamanView from '@classes/shaman/ShamanView.vue'
 import NotFound from '@base/404Page.vue'
+import HunterView from '@classes/hunter/HunterView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -14,8 +15,8 @@ const router = createRouter({
     { path: pathPart() + 'rogue/:string', component: RogueView },
     { path: pathPart() + 'shaman', component: ShamanView },
     { path: pathPart() + 'shaman/:string', component: ShamanView },
-    { path: pathPart() + 'hunter', component: NotFound },
-    { path: pathPart() + 'hunter/:string', component: NotFound },
+    { path: pathPart() + 'hunter', component: HunterView },
+    { path: pathPart() + 'hunter/:string', component: HunterView },
     { path: pathPart() + 'warrior', component: WarriorView },
     { path: pathPart() + 'warrior/:string', component: WarriorView },
     { path: pathPart() + 'paladin', component: NotFound },

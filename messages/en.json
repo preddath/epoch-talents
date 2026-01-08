@@ -827,5 +827,272 @@
         "description": "Protects the target with an earthen shield, giving a 30% chance of ignoring spell interruption when damaged and causing attacks to heal the shielded target for 150.  This effect can only occur once every few seconds.  6 charges.  Lasts 600 seconds.  Earth Shield can only be placed on one target at a time and only one Elemental Shield can be active on a target at a time."
       }
     }
+  },
+  "hunter": {
+    "beastmastery": {
+      "name": "Beastmastery",
+      "improved_aspect_of_the_hawk": {
+        "label": "Improved Aspect of the Hawk",
+        "description": "While Aspect of the Hawk is active, all normal ranged attacks have a 10% chance of increasing ranged attack speed by {a}% for 12 seconds."
+      },
+      "endurance_training": {
+        "label": "Endurance Training",
+        "description": "Increases the Health of your pet by {a}% and your total health by {b}%."
+      },
+      "focused_fire": {
+        "label": "Focused Fire",
+        "description": "All damage caused by you is increased by {a}% while your pet is active and the critical strike chance of your Kill Command ability is increased by {b}%."
+      },
+      "improved_aspect_of_the_monkey": {
+        "label": "Improved Aspect of the Monkey",
+        "description": "Increases the Dodge bonus of your Aspect of the Monkey by {a}%."
+      },
+      "thick_hide": {
+        "label": "Thick Hide",
+        "description": "Increases the armor rating of your pets by {a}% and your armor contribution from items by {b}%."
+      },
+      "improved_revive_pet": {
+        "label": "Improved Revive Pet",
+        "description": "Revive Pet's casting time is reduced by {a} sec, mana cost is reduced by {b}%, and increases the health your pet returns with by an additional {c}%."
+      },
+      "pathfinding": {
+        "label": "Pathfinding",
+        "description": "Increases the speed bonus of your Aspect of the Cheetah and Aspect of the Pack by {a}%."
+      },
+      "bestial_swiftness": {
+        "label": "Bestial Swiftness",
+        "description": "Increases the outdoor movement speed of your pets by 30%."
+      },
+      "unleashed_fury": {
+        "label": "Unleashed Fury",
+        "description": "Increases the damage done by your pets by {a}%."
+      },
+      "improved_mend_pet": {
+        "label": "Improved Mend Pet",
+        "description": "Reduces the mana cost of your Mend Pet spell by {a}% and gives the Mend Pet spell a {b}% chance of cleansing 1 Curse, Disease, Magic or Poison effect from the pet each tick."
+      },
+      "ferocity": {
+        "label": "Ferocity",
+        "description": "Increases the critical strike chance of your pet by {a}%."
+      },
+      "spirit_bond": {
+        "label": "Spirit Bond",
+        "description": "While your pet is active, you and your pet will regenerate {a}% of total health every 10 seconds."
+      },
+      "intimidation": {
+        "label": "Intimidation",
+        "description": "Command your pet to intimidate the target on the next successful melee attack, causing a high amount of threat and stunning the target for 3 seconds."
+      },
+      "bestial_discipline": {
+        "label": "Bestial Discipline",
+        "description": "Increases the Focus regeneration of your pets by {a}%."
+      },
+      "animal_handler": {
+        "label": "Animal Handler",
+        "description": "Increases your speed while mounted by {a}% and your pet's chance to hit by {b}%. The mounted movement speed increase does not stack with other effects."
+      },
+      "frenzy": {
+        "label": "Frenzy",
+        "description": "Gives your pet a {a}% chance to gain a 30% attack speed increase for 8 seconds after dealing a critical strike."
+      },
+      "ferocious_inspiration": {
+        "label": "Ferocious Inspiration",
+        "description": "When your pet scores a critical hit, all party and raid members within 100 yards have all their damage increased by {a}% for 10 seconds."
+      },
+      "bestial_wrath": {
+        "label": "Bestial Wrath",
+        "description": "Send your pet into a rage causing 50% additional damage for 18 seconds.  While enraged, the beast does not feel pity or remorse or fear and it cannot be stopped unless killed."
+      },
+      "catlike_reflexes": {
+        "label": "Catlike Reflexes",
+        "description": "Increases your chance to dodge by {a}% and your pet's chance to dodge by an additional {b}%."
+      },
+      "serpents_swiftness": {
+        "label": "Serpent's Swiftness",
+        "description": "Increases ranged combat attack speed by {a}% and your pet's melee attack speed by {b}%."
+      },
+      "the_beast_within": {
+        "label": "The Beast Within",
+        "description": "When your pet is under the effects of Bestial Wrath, you also go into a rage causing 10% additional damage and reducing mana costs of all spells by 20% for 18 seconds.  While enraged, you do not feel pity or remorse or fear and you cannot be stopped unless killed."
+      }
+    },
+    "marksmanship": {
+      "name": "Marksmanship",
+      "improved_concussive_shot": {
+        "label": "Improved Concussive Shot",
+        "description": "Gives your Concussive Shot a 4% chance to stun the target for 3 seconds."
+      },
+      "lethal_shots": {
+        "label": "Lethal Shots",
+        "description": "Increases your critical strike chance with ranged weapons by 1%."
+      },
+      "improved_hunters_mark": {
+        "label": "Improved Hunter's Mark",
+        "description": "Causes 20% of your Hunter's Mark ability's base attack power to apply to melee attack power as well."
+      },
+      "efficiency": {
+        "label": "Efficiency",
+        "description": "Reduces the Mana cost of your Shots and Stings by 2%."
+      },
+      "go_for_the_throat": {
+        "label": "Go for the Throat",
+        "description": "Your ranged critical hits cause your pet to generate 25 Focus."
+      },
+      "improved_arcane_shot": {
+        "label": "Improved Arcane Shot",
+        "description": "Reduces the cooldown of your Arcane Shot by 0.2 sec."
+      },
+      "aimed_shot": {
+        "label": "Aimed Shot",
+        "description": "An aimed shot that increases ranged damage by 70 and reduces healing done to that target by 50%.  Lasts 10 seconds."
+      },
+      "rapid_killing": {
+        "label": "Rapid Killing",
+        "description": "Reduces the cooldown of your Rapid Fire ability by 1 min.  In addition, after killing an opponent that yields experience or honor, your next Aimed Shot, Arcane Shot or Auto Shot causes 10% additional damage.  Lasts 20 seconds."
+      },
+      "improved_stings": {
+        "label": "Improved Stings",
+        "description": "Increases the damage done by your Serpent Sting and Wyvern Sting by 6% and the mana drained by your Viper Sting by 6%.  In addition, reduces the chance your Stings will be dispelled by 6%."
+      },
+      "mortal_shots": {
+        "label": "Mortal Shots",
+        "description": "Increases your ranged weapon critical strike damage bonus by 6%."
+      },
+      "concussive_barrage": {
+        "label": "Concussive Barrage",
+        "description": "Your successful Auto Shot attacks have a 2% chance to Daze the target for 4 seconds."
+      },
+      "scatter_shot": {
+        "label": "Scatter Shot",
+        "description": "A short-range shot that deals 50% weapon damage and disorients the target for 4 seconds.  Any damage caused will remove the effect.  Turns off your attack when used."
+      },
+      "barrage": {
+        "label": "Barrage",
+        "description": "Increases the damage done by your Multi-Shot and Volley spells by 4%."
+      },
+      "combats_experience": {
+        "label": "Combat Experience",
+        "description": "Increases your total Agility by 1% and your total Intellect by 3%."
+      },
+      "ranged_weapon_specialization": {
+        "label": "Ranged Weapon Specialization",
+        "description": "Increases the damage you deal with ranged weapons by 1%."
+      },
+      "careful_aim": {
+        "label": "Careful Aim",
+        "description": "Increases your ranged attack power by an amount equal to 15% of your total Intellect."
+      },
+      "silencing_shot": {
+        "label": "Silencing Shot",
+        "description": "A shot that deals 50% weapon damage and Silences the target for 3 seconds."
+      },
+      "improved_barrage": {
+        "label": "Improved Barrage",
+        "description": "Increases the critical strike chance of your Multi-Shot ability by 4% and gives you a 33% chance to avoid interruption caused by damage while channeling Volley."
+      },
+      "master_marksman": {
+        "label": "Master Marksman",
+        "description": "Increases your ranged attack power by 2%."
+      },
+      "trueshot_aura": {
+        "label": "Trueshot Aura",
+        "description": "Increases the attack power of party and raid members within 45 yards by 50.  Lasts until cancelled."
+      }
+    },
+    "survival": {
+      "name": "Survival",
+      "monster_slaying": {
+        "label": "Monster Slaying",
+        "description": "Increases all damage caused against Beasts, Giants and Dragonkin targets by 1% and increases critical damage caused against Beasts, Giants and Dragonkin targets by an additional 1%."
+      },
+      "humanoid_slaying": {
+        "label": "Humanoid Slaying",
+        "description": "Increases all damage caused against Humanoid targets by 1% and increases critical damage caused against Humanoid targets by an additional 1%."
+      },
+      "hawk_eye": {
+        "label": "Hawk Eye",
+        "description": "Increases the range of your ranged weapons by 2 yards."
+      },
+      "savage_strikes": {
+        "label": "Savage Strikes",
+        "description": "Increases the critical strike chance of Raptor Strike and Mongoose Bite by 10%."
+      },
+      "entrapment": {
+        "label": "Entrapment",
+        "description": "Gives your Immolation Trap, Frost Trap, Explosive Trap, and Snake Trap a 8% chance to entrap the target, preventing them from moving for 4 seconds."
+      },
+      "deflection": {
+        "label": "Deflection",
+        "description": "Increases your Parry chance by 1%."
+      },
+      "improved_wing_clip": {
+        "label": "Improved Wing Clip",
+        "description": "Gives your Wing Clip ability a 7% chance to immobilize the target for 5 seconds."
+      },
+      "clever_trap": {
+        "label": "Clever Traps",
+        "description": "Increases the duration of Freezing and Frost Trap effects by 15%, the damage of Immolation and Explosive Trap effects by 15%, and the number of snakes summoned from Snake Traps by 15%."
+      },
+      "survivalist": {
+        "label": "Survivalist",
+        "description": "Increases total health by 2%."
+      },
+      "deterrence": {
+        "label": "Deterrence",
+        "description": "When activated, increases your Dodge and Parry chance by 25% for 10 seconds."
+      },
+      "trap_mastery": {
+        "label": "Trap Mastery",
+        "description": "Decreases the chance enemies will resist trap effects by 5%."
+      },
+      "surefooted": {
+        "label": "Surefooted",
+        "description": "Increases hit chance by 1% and increases the chance movement impairing effects will be resisted by an additional 5%."
+      },
+      "improved_feign_death": {
+        "label": "Improved Feign Death",
+        "description": "Reduces the chance your Feign Death ability will be resisted by 2%."
+      },
+      "survival_instincts": {
+        "label": "Survival Instincts",
+        "description": "Reduces all damage taken by 2% and increases attack power by 2%."
+      },
+      "killer_instinct": {
+        "label": "Killer Instinct",
+        "description": "Increases your critical strike chance with all attacks by 1%."
+      },
+      "counterattack": {
+        "label": "Counterattack",
+        "description": "A strike that becomes active after parrying an opponent's attack.  This attack deals 40 damage and immobilizes the target for 5 seconds.  Counterattack cannot be blocked, dodged, or parried."
+      },
+      "resourcefulness": {
+        "label": "Resourcefulness",
+        "description": "Reduces the mana cost of all traps and melee abilities by 20% and reduces the cooldown of all traps by 2 sec."
+      },
+      "lightning_reflexes": {
+        "label": "Lightning Reflexes",
+        "description": "Increases your Agility by 3%."
+      },
+      "thrill_of_the_hunt": {
+        "label": "Thrill of the Hunt",
+        "description": "Gives you a 33% chance to regain 40% of the mana cost of any shot when it critically hits."
+      },
+      "wyvern_sting": {
+        "label": "Wyvern Sting",
+        "description": "A stinging shot that puts the target to sleep for 12 seconds.  Any damage will cancel the effect.  When the target wakes up, the Sting causes 300 Nature damage over 12 seconds.  Only one Sting per Hunter can be active on the target at a time."
+      },
+      "expose_weakness": {
+        "label": "Expose Weakness",
+        "description": "Your ranged criticals have a 33% chance to apply an Expose Weakness effect to the target. Expose Weakness increases the attack power of all attackers against that target by 25% of your Agility for 7 seconds."
+      },
+      "master_tactician": {
+        "label": "Master Tactician",
+        "description": "Your successful ranged attacks have a 6% chance to increase your critical strike chance with all attacks by 2% for 8 seconds."
+      },
+      "readiness": {
+        "label": "Readiness",
+        "description": "When activated, this ability immediately finishes the cooldown on your other Hunter abilities."
+      }
+    }
   }
 }
