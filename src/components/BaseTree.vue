@@ -24,7 +24,7 @@ export default {
       <p class="grow flex justify-center">{{ label }} ({{ total }})</p>
       <button
         type="button"
-        class="bg-red-900 w-5 h-5 cursor-pointer mx-4 text-white text-sm text-center"
+        class="bg-red-900 w-5 h-5 cursor-pointer mx-4 text-white text-sm text-center rounded"
         @click="$emit('reset', spec)"
       >
         X

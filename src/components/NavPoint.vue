@@ -13,7 +13,7 @@ export default {
   },
   computed: {
     isActive() {
-      return this.$route.path.split('/')[2] ?? this.$route.path.split('/')[1] === this.name
+      return (this.$route.path.split('/')[2] ?? this.$route.path.split('/')[1]) === this.name
     },
     currentStore() {
       return useCurrentStore()
@@ -36,7 +36,7 @@ export default {
       <p>{{ currentStore.total }}/61</p>
       <button
         type="button"
-        class="bg-red-900 w-4 h-4 cursor-pointer text-white text-xs text-center"
+        class="bg-red-900 w-4 h-4 cursor-pointer text-white text-xs text-center rounded"
         @click="$emit('reset')"
       >
         x
