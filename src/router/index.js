@@ -5,6 +5,7 @@ import { pathPart } from '@src/enviroment.js'
 import ShamanView from '@classes/shaman/ShamanView.vue'
 import NotFound from '@base/404Page.vue'
 import HunterView from '@classes/hunter/HunterView.vue'
+import PaladinView from '@classes/paladin/PaladinView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -19,8 +20,8 @@ const router = createRouter({
     { path: pathPart() + 'hunter/:string', component: HunterView },
     { path: pathPart() + 'warrior', component: WarriorView },
     { path: pathPart() + 'warrior/:string', component: WarriorView },
-    { path: pathPart() + 'paladin', component: NotFound },
-    { path: pathPart() + 'paladin/:string', component: NotFound },
+    { path: pathPart() + 'paladin', component: PaladinView },
+    { path: pathPart() + 'paladin/:string', component: PaladinView },
     { path: pathPart() + 'druid', component: NotFound },
     { path: pathPart() + 'druid/:string', component: NotFound },
     { path: pathPart() + 'priest', component: NotFound },
