@@ -121,14 +121,15 @@ export default {
       return (
         !this.maxedOut &&
         this.totalRequirement <= this.spec_total &&
-        (!this.requires || this.model[this.requires] === this.requiredTalent.max)
+        (!this.requires ||
+          (this.requiredTalent && this.model[this.requires] === this.requiredTalent.max))
       )
     },
     color() {
       if (this.active || (this.maxedOut && this.modelValue > 0)) {
         return 'filter: none;'
       }
-      return 'filter: grayscale(1);'
+      return 'filter: grayscale(1);opacity:70%'
     },
     classes() {
       let classes = ''
@@ -197,7 +198,7 @@ export default {
       <p>{{ m.rank() }} {{ modelValue }}/{{ max }}</p>
       <p>ID: {{ spellIds[modelValue - 1] ?? spellIds[modelValue] }}</p>
     </div>
-    <p v-if="!active" class="text-red-400">
+    <p v-if="!active && totalRequirement > 0" class="text-red-400">
       {{ m.needed_rank({ a: totalRequirement, b: m[spec + '.name']() }) }}
     </p>
     <p v-if="!active && requiredTalent !== null" class="text-red-400">

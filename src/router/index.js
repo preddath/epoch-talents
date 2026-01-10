@@ -6,6 +6,7 @@ import ShamanView from '@classes/shaman/ShamanView.vue'
 import NotFound from '@base/404Page.vue'
 import HunterView from '@classes/hunter/HunterView.vue'
 import PaladinView from '@classes/paladin/PaladinView.vue'
+import DruidView from '@classes/druid/DruidView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -22,8 +23,8 @@ const router = createRouter({
     { path: pathPart() + 'warrior/:string', component: WarriorView },
     { path: pathPart() + 'paladin', component: PaladinView },
     { path: pathPart() + 'paladin/:string', component: PaladinView },
-    { path: pathPart() + 'druid', component: NotFound },
-    { path: pathPart() + 'druid/:string', component: NotFound },
+    { path: pathPart() + 'druid', component: DruidView },
+    { path: pathPart() + 'druid/:string', component: DruidView },
     { path: pathPart() + 'priest', component: NotFound },
     { path: pathPart() + 'priest/:string', component: NotFound },
     { path: pathPart() + 'warlock', component: NotFound },
