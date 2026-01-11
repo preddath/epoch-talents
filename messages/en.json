@@ -1361,7 +1361,7 @@
         "description": "Increases the critical strike chance of all Judgements capable of a critical hit by {a}% and reduces threat caused by all actions by {a}% except when under the effects of Righteous Fury."
       },
       "verdict": {
-        "label": "Crusader Strike",
+        "label": "Verdict",
         "description": "An instant strike that deals 90% weapon damage as Holy damage and empowers your next Holy spell or ability with a duration of less than 20 seconds by 25%."
       }
     }
@@ -1892,7 +1892,7 @@
       },
       "shadow_power": {
         "label": "Shadow Power",
-        "description": "Increases the critical strike chance of your Mind Blast and Shadow Word: Death spells by {a}%."
+        "description": "Increases the critical strike chance of your Mind Blast and Shadow Word: Death spells and your Psionic Overload talent by {a}%."
       },
       "misery": {
         "label": "Misery",

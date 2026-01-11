@@ -96,6 +96,7 @@ export default {
           focused_mind: 0,
           shadow_resilience: 0,
           darkness: 0,
+          psionic_overload: 0,
           shadowform: 0,
           shadow_power: 0,
           misery: 0,
@@ -629,7 +630,12 @@ export default {
       />
       <div></div>
 
-      <div></div>
+      <TalentNode
+        v-model="model.shadow.psionic_overload"
+        v-bind="shadow.psionic_overload"
+        name="psionic_overload"
+        spec="priest.shadow"
+      />
       <TalentNode
         v-model="model.shadow.shadowform"
         v-bind="shadow.shadowform"
