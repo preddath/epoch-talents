@@ -122,7 +122,7 @@ export const balance = {
   },
   moonglow: {
     spellIds: ['16845', '16846', '16847'],
-    levels: [[3, 6, 9]],
+    levels: [[4, 8, 12]],
     totalRequirement: 20,
     max: 3,
     path: 'spell_nature_sentinal.webp',

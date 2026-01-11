@@ -84,7 +84,7 @@ export const elemental = {
   },
   elemental_devastation: {
     spellIds: ['30160', '29179', '29180'],
-    levels: [[3, 6, 9]],
+    levels: [[2, 4, 6]],
     max: 3,
     totalRequirement: 15,
     path: 'spell_fire_elementaldevastation.webp',
@@ -141,7 +141,10 @@ export const elemental = {
   },
   elemental_shields: {
     spellIds: ['30669', '30670', '30671'],
-    levels: [[2, 4, 6]],
+    levels: [
+      [2, 4, 6],
+      [5, 10, 15],
+    ],
     max: 3,
     totalRequirement: 30,
     path: 'spell_nature_elementalshields.webp',

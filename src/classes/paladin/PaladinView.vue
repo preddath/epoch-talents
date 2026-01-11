@@ -73,7 +73,7 @@ export default {
           improved_blessing_of_might: 0,
           benediction: 0,
           improved_judgement: 0,
-          improved_seal_of_the_crusader: 0,
+          improved_crusader_strike: 0,
           deflection: 0,
           vindication: 0,
           conviction: 0,
@@ -91,7 +91,7 @@ export default {
           repentance: 0,
           divine_purpose: 0,
           fanaticism: 0,
-          crusader_strike: 0,
+          verdict: 0,
         },
       },
     }
@@ -528,9 +528,9 @@ export default {
         spec="paladin.retribution"
       />
       <TalentNode
-        v-model="model.retribution.improved_seal_of_the_crusader"
-        v-bind="retribution.improved_seal_of_the_crusader"
-        name="improved_seal_of_the_crusader"
+        v-model="model.retribution.improved_crusader_strike"
+        v-bind="retribution.improved_crusader_strike"
+        name="improved_crusader_strike"
         spec="paladin.retribution"
       />
       <TalentNode
@@ -656,9 +656,9 @@ export default {
 
       <div></div>
       <TalentNode
-        v-model="model.retribution.crusader_strike"
-        v-bind="retribution.crusader_strike"
-        name="crusader_strike"
+        v-model="model.retribution.verdict"
+        v-bind="retribution.verdict"
+        name="verdict"
         spec="paladin.retribution"
       />
       <div></div>

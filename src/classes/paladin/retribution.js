@@ -20,12 +20,12 @@ export const retribution = {
     max: 2,
     path: 'spell_holy_righteousfury.webp',
   },
-  improved_seal_of_the_crusader: {
+  improved_crusader_strike: {
     spellIds: ['20335', '20336', '20337'],
     levels: [[1, 2, 3]],
     totalRequirement: 5,
     max: 3,
-    path: 'spell_holy_holysmite.webp',
+    path: 'spell_holy_crusaderstrike.webp',
   },
   deflection: {
     spellIds: ['20060', '20061', '20062', '20063', '20064'],
@@ -173,12 +173,13 @@ export const retribution = {
     requires: 'repentance',
     path: 'spell_holy_fanaticism.webp',
   },
-  crusader_strike: {
+  verdict: {
     spellIds: ['35395'],
     levels: [[1]],
     totalRequirement: 40,
     max: 1,
     path: 'spell_holy_crusaderstrike.webp',
+    // @todo Ability daten recherchieren
     ability: {
       cost: '8% of base Mana',
       castTime: 'Instant',
