@@ -614,7 +614,7 @@
       },
       "rolling_thunder": {
         "label": "Rolling Thunder",
-        "description": "If you have an active Lightning Shield, your critical hits with Lightning Bolt and Chain Lightning have a {a}% chance to cause your Lightning Shield to gain an additional charges, up to 9. When you reach 9 charges, any attempt to gain another charge will instead launch a Lightning Shield ball at your target.\n\nWhen you have more than 3 Lightning Shield charges active, your Earth Shock spell will consume up to {b} surplus charge after 2 seconds for up to {c} seconds, sending it at your target."
+        "description": "If you have an active Lightning Shield, your critical hits with Lightning Bolt and Chain Lightning have a {a}% chance to cause your Lightning Shield to gain an additional charges, up to 9. When you reach 9 charges, any attempt to gain another charge will instead launch a Lightning Shield ball at your target.<br><br>When you have more than 3 Lightning Shield charges active, your Earth Shock spell will consume up to {b} surplus charge after 2 seconds for up to {c} seconds, sending it at your target."
       },
       "elemental_devastation": {
         "label": "Elemental Devastation",
@@ -729,7 +729,7 @@
       },
       "primal_wielding": {
         "label": "Primal Wielding",
-        "description": "Allows one-hand and off-hand weapons to be equipped in the off-hand.\n\nAdditionally, your Lightning Bolt and Molten Blast spells no longer delay your next melee swing, but deal 65% less damage if cast within 4.5 seconds after a melee attack."
+        "description": "Allows one-hand and off-hand weapons to be equipped in the off-hand.<br><br>Additionally, your Lightning Bolt and Molten Blast spells no longer delay your next melee swing, but deal 65% less damage if cast within 4.5 seconds after a melee attack."
       },
       "stormstrike": {
         "label": "Stormstrike",
@@ -1306,7 +1306,7 @@
       },
       "seal_of_command": {
         "label": "Seal of Command",
-        "description": "Gives the Paladin a chance to deal additional Holy damage equal to 70% of normal weapon damage. Persists for 0.5 seconds when swapping to any other Seal. Lasts 30 seconds.\n\nUnleashing this Seal's energy will judge an enemy, instantly causing 157.5 Holy damage, 316 if the target is stunned or incapacitated."
+        "description": "Gives the Paladin a chance to deal additional Holy damage equal to 70% of normal weapon damage. Persists for 0.5 seconds when swapping to any other Seal. Lasts 30 seconds.<br><br>Unleashing this Seal's energy will judge an enemy, instantly causing 157.5 Holy damage, 316 if the target is stunned or incapacitated."
       },
       "pursuit_of_justice": {
         "label": "Pursuit of Justice",
@@ -1629,7 +1629,7 @@
       },
       "tree_of_life": {
         "label": "Tree of Life",
-        "description": "Shapeshift into the Tree of Life. While in this form you increase healing received by 25% of your total Spirit for all party members within 45 yards, your movement speed is reduced by 20%, and you can only cast Swiftmend, Innervate, Nature's Swiftness, Barkskin, non-healing Restoration spells, and healing over time spells, but the mana cost of these spells is reduced by 20%.\n\nThe act of shapeshifting frees the caster of Polymorph and Movement Impairing effects."
+        "description": "Shapeshift into the Tree of Life. While in this form you increase healing received by 25% of your total Spirit for all party members within 45 yards, your movement speed is reduced by 20%, and you can only cast Swiftmend, Innervate, Nature's Swiftness, Barkskin, non-healing Restoration spells, and healing over time spells, but the mana cost of these spells is reduced by 20%.<br><br>The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects."
       }
     }
   },
@@ -1901,6 +1901,281 @@
       "vampiric_touch": {
         "label": "Vampiric Touch",
         "description": "Causes 450 Shadow damage over 15 seconds to your target and causes all party members to gain mana equal to 5% of any Shadow spell damage you deal."
+      }
+    }
+  },
+  "warlock": {
+    "affliction": {
+      "name": "Affliction",
+      "suppression": {
+        "label": "Suppression",
+        "description": "Reduces the chance for enemies to resist your Affliction spells by {a}%."
+      },
+      "improved_corruption": {
+        "label": "Improved Corruption",
+        "description": "Reduces the casting time of your Corruption spell by {a} sec, and the casting time of your Seed of Corruption spell by {a} sec."
+      },
+      "improved_curse_of_weakness": {
+        "label": "Improved Curse of Weakness",
+        "description": "Increases the effect of your Curse of Weakness by {a}%."
+      },
+      "improved_drain_soul": {
+        "label": "Improved Drain Soul",
+        "description": "Returns {a}% of your maximum mana if the target is killed by you while you drain its soul, and increases the damage of Drain Soul by {b}%. In addition, your Affliction spells generate {c}% less threat."
+      },
+      "improved_life_tap": {
+        "label": "Improved Life Tap",
+        "description": "Increases the amount of Mana awarded by your Life Tap spell by {a}%."
+      },
+      "soul_siphon": {
+        "label": "Soul Siphon",
+        "description": "Increases the amount drained by your Drain Life and Drain Soul spells by an additional {a}% for each Affliction effect on the target, up to a maximum of {b}% additional effect."
+      },
+      "improved_bane_of_agony": {
+        "label": "Improved Bane of Agony",
+        "description": "Increases the damage done by your Bane of Agony by {a}%."
+      },
+      "fel_concentration": {
+        "label": "Fel Concentration",
+        "description": "Gives you a {a}% chance to avoid interruption caused by damage while channeling the Drain Life, Drain Mana, or Drain Soul spell."
+      },
+      "amplify_bane": {
+        "label": "Amplify Bane",
+        "description": "Increases the effect of your next Bane of Doom or Bane of Agony by 50%, your next Bane of Exhaustion by an additional 20%, or your next Bane of Tongues by an additional 10%. Lasts 30 seconds."
+      },
+      "grim_reach": {
+        "label": "Grim Reach",
+        "description": "Increases the range of your Affliction spells by {a}%."
+      },
+      "nightfall": {
+        "label": "Nightfall",
+        "description": "Gives your Corruption, Drain Life, and Seed of Corruption spells a {a}% chance to cause you to enter a Shadow Trance state after damaging the opponent. The Shadow Trance state reduces the casting time of your next Shadow Bolt spell by 100%."
+      },
+      "empowered_corruption": {
+        "label": "Empowered Corruption",
+        "description": "Your Corruption spell gains an additional {a}% of your bonus spell damage effects, and your Seed of Corruption requires {b}% less damage to trigger its explosion."
+      },
+      "shadow_embrace": {
+        "label": "Shadow Embrace",
+        "description": "Your Corruption, Bane of Agony, Siphon Life and Seed of Corruption spells also cause the Shadow Embrace effect, which reduces physical damage caused by {a}%."
+      },
+      "siphon_life": {
+        "label": "Siphon Life",
+        "description": "Transfers 15 health from the target to the caster every 3 sec. Lasts 30 seconds."
+      },
+      "bane_of_exhaustion": {
+        "label": "Bane of Exhaustion",
+        "description": "Reduces the target's movement speed by 30% for 12 seconds. Only one Bane per Warlock can be active on any one target."
+      },
+      "improved_shadow_bite": {
+        "label": "Improved Shadow Bite",
+        "description": "Your Felhunter regains {a}% of its maximum mana each time it hits with its Shadow Bite ability."
+      },
+      "shadow_mastery": {
+        "label": "Shadow Mastery",
+        "description": "Increases the damage dealt or life drained by your Shadow spells by {a}%."
+      },
+      "contagion": {
+        "label": "Contagion",
+        "description": "Increases the damage of Bane of Agony, Corruption and Seed of Corruption by {a}% and reduces the chance your Affliction spells will be dispelled by an additional {b}%."
+      },
+      "dark_pact": {
+        "label": "Dark Pact",
+        "description": "Drains 305 of your pet's Mana, returning 100% to you."
+      },
+      "improved_howl_of_terror": {
+        "label": "Improved Howl of Terror",
+        "description": "Reduces the casting time of your Howl of Terror spell by {a} sec."
+      },
+      "malediction": {
+        "label": "Malediction",
+        "description": "Increases the damage bonus effect of your Curse of the Elements spell by an additional {a}%."
+      },
+      "unstable_affliction": {
+        "label": "Unstable Affliction",
+        "description": "Shadow energy slowly destroys the target, causing 822 damage over 18 seconds. In addition, if the Unstable Affliction is dispelled it will cause 1224 damage to the dispeller and silence them for 5 seconds."
+      }
+    },
+    "demonology": {
+      "name": "Demonology",
+      "improved_healthstone": {
+        "label": "Improved Healthstone",
+        "description": "Increases the amount of Health restored by your Healthstone by {a}%."
+      },
+      "improved_imp": {
+        "label": "Improved Imp",
+        "description": "Increases the effect of your Imp's Firebolt, Fire Shield, and Blood Pact spells by {a}%."
+      },
+      "demonic_embrace": {
+        "label": "Demonic Embrace",
+        "description": "Increases your total Stamina by {a}% but reduces your total Spirit by {b}%."
+      },
+      "improved_health_funnel": {
+        "label": "Improved Health Funnel",
+        "description": "Increases the amount of Health transferred by your Health Funnel spell by {a}% and reduces the initial health cost by {a}%."
+      },
+      "improved_voidwalker": {
+        "label": "Improved Voidwalker",
+        "description": "Increases the effectiveness of your Voidwalker's Torment, Consume Shadows, Sacrifice and Suffering spells by {a}%."
+      },
+      "fel_intellect": {
+        "label": "Fel Intellect",
+        "description": "Increases the Intellect of your Imp, Voidwalker, Succubus, Felhunter and Felguard by {a}% and increases your maximum mana by {b}%."
+      },
+      "improved_succubus": {
+        "label": "Improved Succubus",
+        "description": "Increases the effect of your Succubus' Lash of Pain and Soothing Kiss spells by {a}%, and increases the duration of your Succubus' Seduction and Lesser Invisibility spells by {a}%."
+      },
+      "fel_domination": {
+        "label": "Fel Domination",
+        "description": "Your next Imp, Voidwalker, Succubus, Felhunter or Felguard Summon spell has its casting time reduced by 5.5 sec and its Mana cost reduced by 50%."
+      },
+      "fel_stamina": {
+        "label": "Fel Stamina",
+        "description": "Increases the Stamina of your Imp, Voidwalker, Succubus, Felhunter and Felguard by {a}% and increases your maximum health by {b}%."
+      },
+      "demonic_aegis": {
+        "label": "Demonic Aegis",
+        "description": "Increases the effectiveness of your Demon Armor and Fel Armor spells by {a}%."
+      },
+      "master_summoner": {
+        "label": "Master Summoner",
+        "description": "Reduces the casting time of your Imp, Voidwalker, Succubus, Felhunter and Fel Guard Summoning spells by {a} sec and the Mana cost by {b}%."
+      },
+      "unholy_power": {
+        "label": "Unholy Power",
+        "description": "Increases the damage done by your Voidwalker, Succubus, Felhunter and Felguard's melee attacks and your Imp's Firebolt by {a}%."
+      },
+      "improved_enslave_demon": {
+        "label": "Improved Enslave Demon",
+        "description": "Reduces the Attack Speed and Casting Speed penalty of your Enslave Demon spell by {a}% and reduces the resist chance by {a}%."
+      },
+      "demonic_empowerment": {
+        "label": "Demonic Empowerment",
+        "description": "Grants the Warlock's summoned demon Empowerment.<br><br>Imp: Your Imp's Firebolts have a 100% chance to critically hit and cost no mana for 8 seconds.<br><br>Voidwalker: Summon demonic plating onto your Voidwalker, increasing its armor by 15% and improving its threat generation by 10%. Lasts 8 seconds.<br><br>Succubus: Your Succubus casts Partial Invisibility, causing all melee and ranged attacks made against it to have a 75% chance to miss and increasing its damage by 10%.<br><br>Felhunter: Sacrifice 10% to 20% of your maximum health to empower your Felhunter's Spell Lock ability, reducing its cooldown by 10 seconds for 20 seconds. Must be above 20% health to cast.<br><br>Felguard: Your Felguard hurls their weapon at the target and enrages, stunning the target for 4 seconds and increasing its damage dealt by 15% for 10 seconds.<br><br>Infernal: Your Infernal becomes immune to all attacks and spells for 6 seconds.<br><br>Doomguard: Your Doomguard casts Shadow Bolt Volley, dealing 1016 Shadow damage to all nearby enemies within 30 yards.<br><br>Enslaved Demon: Apply Demonic Frenzy to your Enslaved Demon, causing it to take 344 damage every 2 seconds and increasing its attack speed by 20% and casting speed by 10% for 10 seconds."
+      },
+      "master_conjuror": {
+        "label": "Master Conjuror",
+        "description": "Reduces the casting time of conjuring stones by {a} sec. Increases the bonus Fire damage from Firestones and the Firestone effect by {b}%. Spellstone now also grants an absorption effect when used. Increases the amount of health you gain from resurrecting via a Soulstone by {c}%, and whenever a party member consumes a Healthstone you heal for {d}% of the amount it healed them for."
+      },
+      "mana_feed": {
+        "label": "Mana Feed",
+        "description": "When you gain mana from Drain Mana or Life Tap spells, your pet gains {a}% of the mana you gain."
+      },
+      "master_demonologist": {
+        "label": "Master Demonologist",
+        "description": "Grants both the Warlock and the summoned demon an effect as long as that demon is active.<br><br>Imp - Reduces threat caused by {a}%.<br><br>Voidwalker - Reduces physical damage taken by {b}%.<br><br>Succubus - Increases all damage caused by {b}%.<br><br>Felhunter - Increases all resistances by {c} per level.<br><br>Felguard - Increases all damage caused by {d}% and all resistances by {e} per level."
+      },
+      "demonic_resilience": {
+        "label": "Demonic Resilience",
+        "description": "Reduces the chance you'll be critically hit by melee and spells by {a}% and reduces all damage your summoned demon takes by {b}%."
+      },
+      "soul_link": {
+        "label": "Soul Link",
+        "description": "When active, 20% of all damage taken by the caster is taken by your Imp, Voidwalker, Succubus, Felhunter, Felguard, or enslaved demon instead. That damage cannot be prevented. In addition, both the demon and master will inflict 5% more damage. Lasts as long as the demon is active and controlled."
+      },
+      "demonic_knowledge": {
+        "label": "Demonic Knowledge",
+        "description": "Increases your spell damage by an amount equal to {a}% of the total of your active demon's Stamina plus Intellect."
+      },
+      "demonic_tactics": {
+        "label": "Demonic Tactics",
+        "description": "Increases melee and spell critical strike chance for you and your summoned demon by {a}%."
+      },
+      "summon_felguard": {
+        "label": "Summon Felguard",
+        "description": "Summons a Felguard under the command of the Warlock."
+      }
+    },
+    "destruction": {
+      "name": "Destruction",
+      "improved_shadow_bolt": {
+        "label": "Improved Shadow Bolt",
+        "description": "Your Shadow Bolt critical strikes increase Shadow damage dealt to the target by {a}% until 4 non-periodic damage sources are applied. Effect lasts a maximum of 12 seconds."
+      },
+      "cataclysm": {
+        "label": "Cataclysm",
+        "description": "Reduces the Mana cost of your Destruction spells by {a}%."
+      },
+      "bane": {
+        "label": "Bane",
+        "description": "Reduces the casting time of your Shadow Bolt and Immolate spells by {a} sec and your Soul Fire spell by {b} sec."
+      },
+      "aftermath": {
+        "label": "Aftermath",
+        "description": "Gives your Destruction spells a {a}% chance to daze the target for 5 seconds."
+      },
+      "improved_firebolt": {
+        "label": "Improved Firebolt",
+        "description": "Reduces the casting time of your Imp's Firebolt spell by {a} sec and decreases its mana cost by {b}%. When your Imp's Firebolt critically hits, you have a {c}% chance to gain Impish Fire, increasing the initial damage of your next single target Fire spell by 10%."
+      },
+      "improved_lash_of_pain": {
+        "label": "Improved Lash of Pain",
+        "description": "Reduces the cooldown of your Succubus' Lash of Pain spell by {a} sec."
+      },
+      "devastation": {
+        "label": "Devastation",
+        "description": "Increases the critical strike chance of your Destruction spells by {a}%."
+      },
+      "shadowburn": {
+        "label": "Shadowburn",
+        "description": "Instantly blasts the target for 135 Shadow damage. If the target dies within 5 seconds of Shadowburn, and yields experience or honor, the caster gains a Soul Shard."
+      },
+      "intensity": {
+        "label": "Intensity",
+        "description": "Gives you a {a}% chance to resist interruption caused by damage while casting or channeling any Destruction spell."
+      },
+      "destructive_reach": {
+        "label": "Destructive Reach",
+        "description": "Increases the range of your Destruction spells by {a}% and reduces threat caused by Destruction spells by {b}%."
+      },
+      "improved_searing_pain": {
+        "label": "Improved Searing Pain",
+        "description": "Increases the critical strike chance of your Searing Pain spell by {a}%."
+      },
+      "pyroclasm": {
+        "label": "Pyroclasm",
+        "description": "Gives your Rain of Fire, Hellfire, and Soul Fire spells a {a}% chance to stun the target for 3 seconds. This chance is spread across the duration of Hellfire and Rain of Fire."
+      },
+      "improved_immolate": {
+        "label": "Improved Immolate",
+        "description": "Increases the initial damage of your Immolate spell by {a}%."
+      },
+      "ruin": {
+        "label": "Ruin",
+        "description": "Increases the critical strike damage bonus of your Destruction spells by 100%."
+      },
+      "shadowfury": {
+        "label": "Shadowfury",
+        "description": "Shadowfury is unleashed, causing 156 Shadow damage and stunning all enemies within 8 yds for 3 seconds."
+      },
+      "nether_protection": {
+        "label": "Nether Protection",
+        "description": "After being hit with a Shadow or Fire spell, you have a {a}% chance to become immune to Shadow and Fire spells for 4 seconds."
+      },
+      "emberstorm": {
+        "label": "Emberstorm",
+        "description": "Increases the damage done by your Fire spells by {a}% and reduces the cast time of your Incinerate spell by {a}%."
+      },
+      "backlash": {
+        "label": "Backlash",
+        "description": "Increases your critical strike chance with spells by an additional {a}% and gives you a {a}% chance when hit by a physical attack to reduce the cast time of your next Shadow Bolt or Incinerate spell by 100%. This effect lasts 8 seconds and will not occur more than once every 8 seconds."
+      },
+      "conflagrate": {
+        "label": "Conflagrate",
+        "description": "Ignites a target that is already afflicted by your Immolate, dealing 272 Fire damage and consuming the Immolate spell."
+      },
+      "soul_leech": {
+        "label": "Soul Leech",
+        "description": "Gives your Shadow Bolt, Shadowburn, Soul Fire, Incinerate, Searing Pain and Conflagrate spells a {a}% chance to return health equal to 20% of the damage caused."
+      },
+      "shadow_and_flame": {
+        "label": "Shadow and Flame",
+        "description": "Your Shadow Bolt and Incinerate spells gain an additional {a}% of your bonus spell damage effects."
+      },
+      "demonic_sacrifice": {
+        "label": "Demonic Sacrifice",
+        "description": "When activated, sacrifices your summoned demon to grant you an effect that lasts 1800 seconds. The effect is canceled if any Demon is summoned.<br><br>Imp: Increases your Fire damage by 15%.<br><br>Voidwalker: Restores 2% of total health every 4 seconds.<br><br>Succubus: Increases your Shadow damage by 15%.<br><br>Felhunter: Restores 3% of total mana every 4 seconds.<br><br>Felguard: Increases your Shadow damage by 10% and restores 2% of total mana every 4 seconds."
       }
     }
   }

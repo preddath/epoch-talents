@@ -8,6 +8,7 @@ import HunterView from '@classes/hunter/HunterView.vue'
 import PaladinView from '@classes/paladin/PaladinView.vue'
 import DruidView from '@classes/druid/DruidView.vue'
 import PriestView from '@classes/priest/PriestView.vue'
+import WarlockView from '@classes/warlock/WarlockView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -28,8 +29,8 @@ const router = createRouter({
     { path: pathPart() + 'druid/:string', component: DruidView },
     { path: pathPart() + 'priest', component: PriestView },
     { path: pathPart() + 'priest/:string', component: PriestView },
-    { path: pathPart() + 'warlock', component: NotFound },
-    { path: pathPart() + 'warlock/:string', component: NotFound },
+    { path: pathPart() + 'warlock', component: WarlockView },
+    { path: pathPart() + 'warlock/:string', component: WarlockView },
     { path: pathPart() + 'mage', component: NotFound },
     { path: pathPart() + 'mage/:string', component: NotFound },
   ],

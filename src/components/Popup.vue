@@ -27,9 +27,9 @@ export default {
     getDirection() {
       switch (this.placement) {
         case 'top':
-          return 'popup-top'
+          return 'popup-top w-[17vw]'
         case 'right':
-          return 'popup-right'
+          return 'popup-right max-w-1/2'
         case 'bottom':
           return 'popup-bottom'
         case 'left':
@@ -64,7 +64,7 @@ export default {
     :id="'tooltip_' + to"
     popover="manual"
     :class="getDirection()"
-    class="popup fixed p-3 rounded-lg bg-gray-700 opacity-90 text-amber-400 shadow-xl z-20 text-sm m-2 max-w-1/6"
+    class="popup fixed p-3 rounded-lg bg-gray-700 opacity-90 text-amber-400 shadow-xl z-20 text-sm m-2"
     :style="'position-anchor: --anchor-' + uuid"
   >
     <slot></slot>
@@ -74,7 +74,7 @@ export default {
 <style scoped>
 .popup-top {
   position-area: top;
-  position-try-fallbacks: bottom, left, right;
+  position-try-fallbacks: bottom, right, left;
 }
 .popup-right {
   position-area: right;
@@ -82,7 +82,7 @@ export default {
 }
 .popup-bottom {
   position-area: bottom;
-  position-try-fallbacks: top, left, right;
+  position-try-fallbacks: top, right, left;
 }
 .popup-left {
   position-area: left;

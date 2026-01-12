@@ -47,6 +47,9 @@ export default {
     spellIds: {
       type: Array,
     },
+    sideded: {
+      type: Boolean,
+    },
   },
   emits: ['update:modelValue'],
   data() {
@@ -187,7 +190,7 @@ export default {
       >{{ modelValue }}/{{ max }}</span
     >
   </div>
-  <Popup :to="spec + '_' + name">
+  <Popup :to="spec + '_' + name" :placement="sideded ? 'right' : 'top'">
     <header class="text-xl font-bold flex items-center justify-between">
       <p class="text-white">{{ label }}</p>
       <p class="text-sm px-2 bg-amber-400 text-black text-center rounded" v-if="ability !== null">
