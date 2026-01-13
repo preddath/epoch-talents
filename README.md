@@ -11,7 +11,7 @@ The following Classes are available:
 - Paladin
 - Druid
 - Priest
+- Warlock
 
 The following Classes are still missing:
-- Warlock
 - Mage
