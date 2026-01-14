@@ -19,8 +19,8 @@ export const balance = {
   },
   improved_natures_grasp: {
     spellIds: ['17245', '17247', '17248', '17249'],
-    // alte Daten sagen 65 auf R4 -> kann das sein?
-    levels: [[15, 30, 45, 60]],
+    // @todo kann das sein?
+    levels: [[15, 30, 45, 65]],
     totalRequirement: 0,
     max: 4,
     requires: 'natures_grasp',
@@ -83,10 +83,10 @@ export const balance = {
   },
   celestial_starlight: {
     spellIds: ['16850', '16923', '16924'],
-    // alte Daten sagen 70 auf R3 -> ???
+    // @todo passt das ???
     levels: [
       [5, 10, 15],
-      [25, 50, 75],
+      [25, 50, 70],
     ],
     totalRequirement: 15,
     max: 3,

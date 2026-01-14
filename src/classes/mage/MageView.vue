@@ -221,6 +221,7 @@ export default {
         name="arcane_concentration"
         spec="mage.arcane"
       />
+      <Arrow from="arcane_concentration" to="arcane_potency" tree="tree_arcane" />
       <div></div>
 
       <TalentNode
@@ -275,6 +276,7 @@ export default {
         name="presence_of_mind"
         spec="mage.arcane"
       />
+      <Arrow from="presence_of_mind" to="arcane_instability" tree="tree_arcane" />
       <div></div>
       <TalentNode
         v-model="model.arcane.arcane_mind"
@@ -295,6 +297,7 @@ export default {
         name="arcane_instability"
         spec="mage.arcane"
       />
+      <Arrow from="arcane_instability" to="arcane_power" tree="tree_arcane" />
       <TalentNode
         v-model="model.arcane.arcane_potency"
         v-bind="arcane.arcane_potency"
@@ -390,6 +393,7 @@ export default {
         name="pyroblast"
         spec="mage.fire"
       />
+      <Arrow from="pyroblast" to="blast_wave" tree="tree_fire" />
       <TalentNode
         v-model="model.fire.burning_soul"
         v-bind="fire.burning_soul"
@@ -429,12 +433,14 @@ export default {
         name="critical_mass"
         spec="mage.fire"
       />
+      <Arrow from="critical_mass" to="combustion" tree="tree_fire" />
       <TalentNode
         v-model="model.fire.blast_wave"
         v-bind="fire.blast_wave"
         name="blast_wave"
         spec="mage.fire"
       />
+      <RightArrow from="blast_wave" to="pyroclastic_burst" tree="tree_fire" />
       <TalentNode
         v-model="model.fire.pyroclastic_burst"
         v-bind="fire.pyroclastic_burst"
@@ -463,19 +469,20 @@ export default {
         name="pyromaniac"
         spec="mage.fire"
       />
-      <div></div>
       <TalentNode
         v-model="model.fire.combustion"
         v-bind="fire.combustion"
         name="combustion"
         spec="mage.fire"
       />
+      <Arrow from="combustion" to="dragons_breath" tree="tree_fire" />
       <TalentNode
         v-model="model.fire.molten_fury"
         v-bind="fire.molten_fury"
         name="molten_fury"
         spec="mage.fire"
       />
+      <div></div>
 
       <div></div>
       <div></div>
@@ -544,6 +551,7 @@ export default {
         name="improved_frost_nova"
         spec="mage.frost"
       />
+      <Arrow from="improved_frost_nova" to="shatter" tree="tree_frost" />
       <TalentNode
         v-model="model.frost.permafrost"
         v-bind="frost.permafrost"
@@ -603,6 +611,7 @@ export default {
         name="cold_snap"
         spec="mage.frost"
       />
+      <Arrow from="cold_snap" to="ice_barrier" tree="tree_frost" />
       <TalentNode
         v-model="model.frost.improved_cone_of_cold"
         v-bind="frost.improved_cone_of_cold"

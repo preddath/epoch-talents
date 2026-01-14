@@ -27,7 +27,7 @@ export const affliction = {
     spellIds: ['18213', '18372'],
     levels: [
       [7, 15],
-      [12, 24],
+      [6, 12],
       [5, 10],
     ],
     totalRequirement: 5,
@@ -150,7 +150,7 @@ export const affliction = {
   contagion: {
     spellIds: ['30060', '30061', '30062', '30063', '30064'],
     levels: [
-      [1, 2, 3, 4, 5],
+      [2, 4, 6, 8, 10],
       [6, 12, 18, 24, 30],
     ],
     totalRequirement: 30,

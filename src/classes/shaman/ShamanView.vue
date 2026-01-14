@@ -94,10 +94,6 @@ export default {
     }
   },
   mounted() {
-    //console.log(Object.keys(restoration))
-    //console.log(Object.keys(restoration).map((key) => restoration[key].name))
-    //console.log(Object.keys(restoration).map((key) => restoration[key].ranks[0]))
-
     const url = window.location.href.split('/')
     let trees = false
     if (url.length === 6 && url[5] !== '') {

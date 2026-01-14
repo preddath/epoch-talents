@@ -1977,7 +1977,7 @@
       },
       "contagion": {
         "label": "Contagion",
-        "description": "Increases the damage of Bane of Agony, Corruption and Seed of Corruption by {a}% and reduces the chance your Affliction spells will be dispelled by an additional {b}%."
+        "description": "Increases the damage of Bane of Agony, Corruption, Siphon Life, Bane of Doom and Seed of Corruption by {a}% and reduces the chance your Affliction spells will be dispelled by an additional {b}%."
       },
       "dark_pact": {
         "label": "Dark Pact",
