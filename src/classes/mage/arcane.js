@@ -57,7 +57,7 @@ export const arcane = {
   arcane_impact: {
     spellIds: ['11242', '12467', '12469'],
     levels: [[2, 4, 6]],
-    totalRequirement: 0,
+    totalRequirement: 10,
     max: 3,
     path: 'spell_nature_wispsplode.webp',
   },

@@ -70,7 +70,7 @@ export const fire = {
       [35, 70],
       [5, 10],
     ],
-    totalRequirement: 0,
+    totalRequirement: 15,
     max: 2,
     path: 'spell_fire_fire.webp',
   },
