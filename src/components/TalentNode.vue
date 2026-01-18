@@ -93,6 +93,20 @@ export default {
             variables.c = this.levels[2][0]
           }
         }
+        if (this.levels[3]) {
+          if (value > 0) {
+            variables.d = this.levels[3][value - 1]
+          } else {
+            variables.d = this.levels[3][0]
+          }
+        }
+        if (this.levels[4]) {
+          if (value > 0) {
+            variables.e = this.levels[4][value - 1]
+          } else {
+            variables.e = this.levels[4][0]
+          }
+        }
       }
       const key = this.spec + '.' + this.name + '.description'
       if (m[key]) {
