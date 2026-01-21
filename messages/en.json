@@ -638,7 +638,7 @@
       },
       "call_of_thunder": {
         "label": "Call of Thunder",
-        "description": "Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by an additional {a}%."
+        "description": "Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by an additional {a}% and the damage of Lightning Bolt and Chain Lightning by {a}%."
       },
       "elemental_mastery": {
         "label": "Elemental Mastery",
