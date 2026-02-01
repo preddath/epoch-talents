@@ -102,10 +102,7 @@ export const holy = {
     spellIds: ['20359', '20360', '20361'],
     max: 3,
     totalRequirement: 20,
-    levels: [
-      [2, 5, 6],
-      [33, 66, 100],
-    ],
+    levels: [[2, 5, 6]],
     path: 'spell_holy_healingaura.webp',
   },
   purifying_power: {
