@@ -351,7 +351,7 @@
       },
       "poisoned_knife": {
         "label": "Poisoned Knife",
-        "description": "Throw and Deadly Throw now have a {a}% chance to consume 10 minutes of your off-hand weapon's poison to apply it to the target."
+        "description": "Throw and Deadly Throw now have a {a}% chance to consume 5 minutes of your off-hand weapon's poison to apply it to the target."
       },
       "seal_fate": {
         "label": "Seal Fate",
